@@ -1,0 +1,10 @@
+# ignore node files
+node_modules/
+
+# ignore IDEA workspace file
+.idea
+
+# ignore log files
+*.log
+
+
