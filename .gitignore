@@ -9,5 +9,7 @@ node_modules/
 
 # ignore auth file. NO LOOKIE AT TOKENS
 auth.json
+*.pem
+
 
 

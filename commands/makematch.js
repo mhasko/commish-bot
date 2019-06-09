@@ -38,7 +38,7 @@ class MakeMatchCommand extends Commando.Command {
         const newChannelName = blueTeamRole.name + ' vs ' + redTeamRole.name;
         let options = {
             type: 'text',
-            overwrites: [
+            permissionOverwrites: [
                 {
                     id: server.defaultRole.id,
                     deny: ['VIEW_CHANNEL'],
