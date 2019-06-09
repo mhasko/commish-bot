@@ -1,18 +1,12 @@
 "use strict";
 
-const log = require('loglevel').getLogger('Helper');
-    // text = require('../data/text'),
-    // {Team} = require('./constants'),
-    // settings = require('../data/settings');
+// const log = require('loglevel').getLogger('Helper');
 
 class Helper {
     constructor() {
         // this.text = text;
         this.client = null;
         this.notify_client = null;
-
-        // cache of emoji ids, populated on client login
-        this.emojis = null;
     }
 
     setClient(client) {

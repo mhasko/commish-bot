@@ -7,4 +7,7 @@ node_modules/
 # ignore log files
 *.log
 
+# ignore auth file. NO LOOKIE AT TOKENS
+auth.json
+
 
