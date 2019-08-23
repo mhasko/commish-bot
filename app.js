@@ -38,11 +38,11 @@ client
 
         // Only initialize various classes once ever since ready event gets fired
         // upon reconnecting after longer outages
-        // if (!is_initialized) {
+        if (!is_initialized) {
             Helper.setClient(client);
 
-        //     is_initialized = true;
-        // }
+            is_initialized = true;
+        }
     });
     // .on('disconnect', () => { console.warn('Disconnected!'); })
     // .on('reconnecting', () => { console.warn('Reconnecting...'); })

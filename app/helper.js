@@ -1,6 +1,7 @@
 "use strict";
 
 // const log = require('loglevel').getLogger('Helper');
+const settings = require('../data/settings');
 
 class Helper {
     constructor() {
@@ -18,23 +19,16 @@ class Helper {
             return [
                 guild.id,
                 {
-                    // channels: {
-                    //     bot_lab: guild.channels.find(channel => {
-                    //         return channel.name === settings.channels.bot_lab;
-                    //     }),
-                    //     mod_bot_lab: guild.channels.find(channel => {
-                    //         return channel.name === settings.channels.mod_bot_lab;
-                    //     }),
-                    //     unown: guild.channels.find(channel => {
-                    //         return channel.name === settings.channels.unown;
-                    //     }),
-                    //     ex_announce_channel: guild.channels.find(channel => {
-                    //         return channel.name === settings.channels.ex_gym_raids;
-                    //     }),
+                    channels: {
+                        bot_lab: guild.channels.find(channel => {
+                            return channel.name === settings.channels.bot_lab;
+                        }),
+                        mod_bot_lab: guild.channels.find(channel => {
+                            return channel.name === settings.channels.mod_bot_lab;
+                        })
                     //     help: null,
-                    // },
+                    },
                     roles
-                    // emojis: null
                 }
             ]
         }));
