@@ -1,6 +1,6 @@
 "use strict";
 
-const log = require('loglevel').getLogger('MakeMatch'),
+const //log = require('loglevel').getLogger('MakeMatch'),
     auth = require('../auth'),
     Commando = require('discord.js-commando'),
     Helper = require('../app/helper'),
@@ -40,7 +40,7 @@ class MakeMatchCommand extends Commando.Command {
         let server = message.guild;
         let commishBot = Helper.getRole(server, auth.user);
 
-        async function categoryCheck(category) {
+        async function categoryCheck(category, options) {
             if(category){
                 // If this category doesn't exist, create it
                 if(!server.channels.find('name', category)){
@@ -189,7 +189,7 @@ class MakeMatchCommand extends Commando.Command {
                                             };
                                             let newChannelName = blueTeamRole.name + ' vs ' + redTeamRole.name;
                                             if (blueTeamRole && redTeamRole) {
-                                                /*await*/ categoryCheck(args[2]).then(
+                                                 categoryCheck('match text channels', options).then(
                                                     server.createChannel(newChannelName, options).then(async newChannel => {
                                                         newChannel.send(`${blueTeamRole} ${redTeamRole} This is the match channel.`);
                                                     }))

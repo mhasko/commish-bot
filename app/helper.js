@@ -85,7 +85,7 @@ class Helper {
 
     getRole(guild, role_name) {
         const guild_map = this.guild.get(guild.id);
-
+        // if(!role_name) {return null;}
         return guild_map.roles.get(role_name.toLowerCase());
     }
 
