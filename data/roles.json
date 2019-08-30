@@ -1,34 +1,176 @@
 {
-  "roles": {
-    "ionian":[
-      "Firing Breathing Rubber Duckies",
-      "Miztosis's EGrils",
-      "Uwu Gaming",
-      "Rejected By Amumu",
-      "Scuttle Time",
-      "Washed Up One Tricks"],
-    "shuriman": [
-      "#PaidBySteve",
-      "The Squirtle Squad",
-      "Dandelion Knights",
-      "Ravenous Kumquats",
-      "Nerdy Pandas",
-      "Spacemen Spiff"],
-    "noxian": [
-      "Dream Daddies",
-      "Mexico 2",
-      "HTS Gaming",
-      "Glorified Banner Minions",
-      "Kamikaze Penguins",
-      "Arny",
-      "Galactice Pirates"],
-    "demacian": [
-      "23rd Airborne",
-      "Defiant",
-      "Noctua Esports",
-      "Insignia",
-      "Event Horizon",
-      "Bronze V Age"
-    ]
+  "ionian":{
+    "teams": {
+      "Long Live Teemo": {
+        "name": "Long Live Teemo",
+        "abvrName": "LLT",
+        "discordRole": "Long Live Teemo",
+        "discordIcon": ":one:"
+      },
+      "Too Fat to Kite": {
+        "name": "Too Fat to Kite",
+        "abvrName": "TFTK",
+        "discordRole": "Too Fat to Kite",
+        "discordIcon": ":tftk:"
+      },
+      "Guardian Gaming": {
+        "name": "Guardian Gaming",
+        "abvrName": "GG",
+        "discordRole": "Guardian Gaming",
+        "discordIcon": ":gg:"
+      },
+      "Team22": {
+        "name": "Team22",
+        "abvrName": "T22",
+        "discordRole": "Team 22",
+        "discordIcon": ":two:"
+      },
+      "Wasted Potential": {
+        "name": "Wasted Potential",
+        "abvrName": "WP",
+        "discordRole": "Wasted Potential",
+        "discordIcon": ":three:"
+      },
+      "Nerdy Pandas": {
+        "name": "Nerdy Pandas",
+        "abvrName": "NP",
+        "discordRole": "Nerdy Pandas",
+        "discordIcon": ":np:"
+      }
+    },
+    "tribunal": [],
+    "mods": []
+  },
+  "shuriman": {
+    "teams": {
+      "Glorified Banner Minions": {
+        "name": "Glorified Banner Minions",
+        "abvrName": "GBM",
+        "discordRole": "Glorified Banner Minions",
+        "discordIcon": ":gbm:"
+      },
+      "Ravenous Kumquats": {
+        "name": "Ravenous Kumquats",
+        "abvrName": "RK",
+        "discordRole": "Ravenous Kumquats",
+        "discordIcon": ":rq:"
+      },
+      "Team12": {
+        "name": "Team12",
+        "abvrName": "T12",
+        "discordRole": "Team 12",
+        "discordIcon": ":one:"
+      },
+      "Delicions Daddios": {
+        "name": "Delicions Daddios",
+        "abvrName": "DD",
+        "discordRole": "Delicions Daddios",
+        "discordIcon": ":dd:"
+      },
+      "ABCDEsports": {
+        "name": "ABCDEsports",
+        "abvrName": "ABCD",
+        "discordRole": "ABCDEsports",
+        "discordIcon": ":abcd:"
+      },
+      "The Dandelion Knights": {
+        "name": "The Dandelion Knights",
+        "abvrName": "TDK",
+        "discordRole": "The Dandelion Knights",
+        "discordIcon": ":tdk:"
+      },
+      "Kamikaze Penguins": {
+        "name": "Kamikaze Penguins",
+        "abvrName": "KP",
+        "discordRole": "Kamikaze Penguins",
+        "discordIcon": ":kp:"
+      }
+    },
+    "tribunal": [],
+    "mods": []
+  },
+  "noxian": {
+    "teams": {
+      "Stars United Esports Club": {
+        "name": "Stars United Esports Club",
+        "abvrName": "SUEC",
+        "discordRole": "Stars United Esports Club",
+        "discordIcon": ":starsu:"
+      },
+      "Team23": {
+        "name": "Team23",
+        "abvrName": "T23",
+        "discordRole": "Team 23",
+        "discordIcon": ":one:"
+      },
+      "Bronze V Age": {
+        "name": "Bronze V Age",
+        "abvrName": "B5A",
+        "discordRole": "Bronze V Age",
+        "discordIcon": "bva"
+      },
+      "Team Renegatus": {
+        "name": "Team Renegatus",
+        "abvrName": "TR",
+        "discordRole": "Team Renegatus",
+        "discordIcon": ":tr:"
+      },
+      "Keyboard Cats": {
+        "name": "Keyboard Cats",
+        "abvrName": "KC",
+        "discordRole": "Keyboard Cats",
+        "discordIcon": ":kc:"
+      },
+      "Anarchy": {
+        "name": "Anarchy",
+        "abvrName": "Anar",
+        "discordRole": "Anarchy",
+        "discordIcon": ":two:"
+      }
+    },
+    "tribunal": [],
+    "mods": []
+  },
+  "demacian": {
+    "teams": {
+      "Defiant": {
+        "name": "Defiant",
+        "abvrName": "DEF",
+        "discordRole": "Defiant",
+        "discordIcon": "def"
+      },
+      "Sentinels": {
+        "name": "Sentinels",
+        "abvrName": "SENT",
+        "discordRole": "Sentinels",
+        "discordIcon": ":one:"
+      },
+      "Team Support Main": {
+        "name": "Team Support Main",
+        "abvrName": "TSM",
+        "discordRole": "Team Support Main",
+        "discordIcon": ":tsm:"
+      },
+      "Men's Women's Torment": {
+        "name": "Men's Women's Torment",
+        "abvrName": "MWT",
+        "discordRole": "Men's Women's Torment",
+        "discordIcon": ":mwt:"
+      },
+      "Incendium Gaming": {
+        "name": "Incendium Gaming",
+        "abvrName": "IG",
+        "discordRole": "Incendium Gaming",
+        "discordIcon": ":ig:"
+      },
+      "Amber O2": {
+        "name": "Amber O2",
+        "abvrName": "AO2",
+        "discordRole": "Amber O2",
+        "discordIcon": ":ao2:"
+      }
+    },
+    "tribunal": [],
+    "mods": []
   }
 }

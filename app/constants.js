@@ -6,10 +6,10 @@ const CommandGroup = {
 };
 
 const Divisions = {
-    IONIAN: 0,
-    SHURIMAN: 1,
-    NOXIAN: 2,
-    DEMACIAN: 3
+    "\u0031\u20E3": 'ionian',
+    "\u0032\u20E3": 'shuriman',
+    "\u0033\u20E3": 'noxian',
+    "\u0034\u20E3": 'demacian'
 };
 
 const MatchSide = {
