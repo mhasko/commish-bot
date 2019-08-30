@@ -119,7 +119,7 @@ class MakeMatchCommand extends Commando.Command {
                 const optionFilter = (reaction, user) => {
                     return  consts.ReactionNumbers.some((hex) => reaction.emoji.name === hex) && user.id === message.author.id;
                 };
-                divisionMessage.awaitReactions(optionFilter, {max: 1, time: 10000, errors: ['time']})
+                divisionMessage.awaitReactions(optionFilter, {max: 1, time: 25000, errors: ['time']})
                     .then(collected => {
                         let teamOptions = '';
                         const teamMap = {};
@@ -137,12 +137,12 @@ class MakeMatchCommand extends Commando.Command {
                                 .then(() => homeTeamMessage.react(consts.ReactionNumbers[5]))
                                 .then(() => homeTeamMessage.react(consts.ReactionNumbers[6]))
                                 .then(() => {
-                                    if(division.teams.length === 7){
+                                    if(Object.keys(division.teams).length === 7){
                                         homeTeamMessage.react(consts.ReactionNumbers[7])
                                     }
                                 });
 
-                            homeTeamMessage.awaitReactions(optionFilter, {max: 1, time: 10000, errors: ['time']})
+                            homeTeamMessage.awaitReactions(optionFilter, {max: 1, time: 25000, errors: ['time']})
                                 .then(homeCollected => {
                                     const reaction = homeCollected.first();
                                     let blueTeamRole = Helper.getRole(server, teamMap[reaction.emoji.name]);
@@ -155,12 +155,12 @@ class MakeMatchCommand extends Commando.Command {
                                             .then(() => awayTeamMessage.react(consts.ReactionNumbers[5]))
                                             .then(() => awayTeamMessage.react(consts.ReactionNumbers[6]))
                                             .then(() => {
-                                                if(division.teams.length === 7){
+                                                if(Object.keys(division.teams).length === 7){
                                                     awayTeamMessage.react(consts.ReactionNumbers[7])
                                                 }
                                             });
 
-                                        awayTeamMessage.awaitReactions(optionFilter, {max: 1, time: 10000, errors: ['time']})
+                                        awayTeamMessage.awaitReactions(optionFilter, {max: 1, time: 25000, errors: ['time']})
                                             .then(awayCollected => {
                                             const reaction = awayCollected.first();
                                             let redTeamRole = Helper.getRole(server, teamMap[reaction.emoji.name]);

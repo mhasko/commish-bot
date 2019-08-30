@@ -36,6 +36,12 @@
         "abvrName": "NP",
         "discordRole": "Nerdy Pandas",
         "discordIcon": ":np:"
+      },
+      "Team Tempest": {
+        "name": "Team Tempest",
+        "abvrName": "TT",
+        "discordRole": "Team Tempest",
+        "discordIcon": ":tt:"
       }
     },
     "tribunal": [],
