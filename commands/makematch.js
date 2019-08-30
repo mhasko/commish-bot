@@ -192,6 +192,7 @@ class MakeMatchCommand extends Commando.Command {
                                                  categoryCheck('match text channels', options).then(
                                                     server.createChannel(newChannelName, options).then(async newChannel => {
                                                         newChannel.send(`${blueTeamRole} ${redTeamRole} This is the match channel.`);
+                                                        newChannel.send(`${messages.newChannelMessageNoVote}`)
                                                     }))
                                                     .catch(err => message.channel.send(`Error in category check: ${err}`));
 
