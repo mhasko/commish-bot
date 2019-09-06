@@ -19,11 +19,11 @@
         "discordRole": "Guardian Gaming",
         "discordIcon": ":gg:"
       },
-      "Team22": {
-        "name": "Team22",
-        "abvrName": "T22",
-        "discordRole": "Team 22",
-        "discordIcon": ":two:"
+      "The Happy Campers GG": {
+        "name": "The Happy Campers GG",
+        "abvrName": "THC",
+        "discordRole": "TheHappyCampersGG",
+        "discordIcon": ":thc:"
       },
       "Wasted Potential": {
         "name": "Wasted Potential",
@@ -61,16 +61,16 @@
         "discordRole": "Ravenous Kumquats",
         "discordIcon": ":rq:"
       },
-      "Team12": {
-        "name": "Team12",
-        "abvrName": "T12",
-        "discordRole": "Team 12",
-        "discordIcon": ":one:"
+      "Gank Top Plz": {
+        "name": "Gank Top Plz",
+        "abvrName": "GTP",
+        "discordRole": "Gank Top Plz",
+        "discordIcon": ":gtp:"
       },
-      "Delicions Daddios": {
-        "name": "Delicions Daddios",
+      "Delicious Daddios": {
+        "name": "Delicious Daddios",
         "abvrName": "DD",
-        "discordRole": "Delicions Daddios",
+        "discordRole": "Delicious Daddios",
         "discordIcon": ":dd:"
       },
       "ABCDEsports": {
@@ -103,11 +103,11 @@
         "discordRole": "Stars United Esports Club",
         "discordIcon": ":starsu:"
       },
-      "Team23": {
-        "name": "Team23",
-        "abvrName": "T23",
-        "discordRole": "Team 23",
-        "discordIcon": ":one:"
+      "Engima": {
+        "name": "Enigma",
+        "abvrName": "Eng",
+        "discordRole": "Enigma",
+        "discordIcon": ":eng:"
       },
       "Bronze V Age": {
         "name": "Bronze V Age",
