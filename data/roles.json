@@ -1,11 +1,11 @@
 {
   "ionian":{
     "teams": {
-      "Long Live Teemo": {
-        "name": "Long Live Teemo",
-        "abvrName": "LLT",
-        "discordRole": "Long Live Teemo",
-        "discordIcon": ":one:"
+      "Washed Up One Tricks": {
+        "name": "Washed Up One Tricks",
+        "abvrName": "WUOT",
+        "discordRole": "Washed Up One Tricks",
+        "discordIcon": ":wuot:"
       },
       "Too Fat to Kite": {
         "name": "Too Fat to Kite",
