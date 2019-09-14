@@ -45,6 +45,7 @@
       }
     },
     "category": "Ionian Division",
+    "divisionRole": "ionian ref",
     "tribunal": [],
     "mods": []
   },
@@ -94,6 +95,7 @@
       }
     },
     "category": "Shuriman Division",
+    "divisionRole": "shuriman ref",
     "tribunal": [],
     "mods": []
   },
@@ -137,6 +139,7 @@
       }
     },
     "category": "Noxian Division",
+    "divisionRole": "noxian ref",
     "tribunal": [],
     "mods": []
   },
@@ -180,6 +183,7 @@
       }
     },
     "category": "Demacian Division",
+    "divisionRole": "demacian ref",
     "tribunal": [],
     "mods": []
   }

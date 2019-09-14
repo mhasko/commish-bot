@@ -2,5 +2,9 @@
   "channels": {
     "bot_lab": "the-bot-lab",
     "mod_bot_lab": "mod-bot-lab"
+  },
+  "roles": {
+    "admin": "the tribunal",
+    "mod": "mods"
   }
 }
