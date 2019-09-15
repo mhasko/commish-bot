@@ -25,7 +25,8 @@ client.registry
     .registerDefaultCommands()
     // .registerCommandsIn(path.join(__dirname, 'commands'));
     .registerCommands([
-        require('./commands/makematch')
+        require('./commands/makematch'),
+        require('./commands/makePollCommand')
         ]);
 
 

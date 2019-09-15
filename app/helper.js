@@ -42,27 +42,32 @@ class Helper {
         return this.notify_client.guilds.get(guild_id).members.get(member_id)
     }
 
+    getNextDayOfTheWeek(dayName, excludeToday = true, refDate = new Date()) {
+        const dayOfWeek = ["sun","mon","tue","wed","thu","fri","sat"]
+            .indexOf(dayName.slice(0,3).toLowerCase());
+        if (dayOfWeek < 0) return;
+        refDate.setHours(0,0,0,0);
+        refDate.setDate(refDate.getDate() + !!excludeToday +
+            (dayOfWeek + 7 - refDate.getDay() - !!excludeToday) % 7);
+        return refDate;
+    }
+
     isManagement(message) {
         let is_mod_or_admin = false;
 
         if (message.channel.type !== 'dm') {
-            const admin_role = this.getRole(message.guild, 'admin'),
-                moderator_role = this.getRole(message.guild, 'moderator'),
-                tribunal_role = this.getRole(message.guild, 'the tribunal'),
+            const admin_role = this.getRole(message.guild, settings.roles.admin),
+                moderator_role = this.getRole(message.guild, settings.roles.mod),
 
                 admin_role_id = admin_role ?
                     admin_role.id :
                     -1,
                 moderator_role_id = moderator_role ?
                     moderator_role.id :
-                    -1,
-                tribunal_role_id = tribunal_role ?
-                    tribunal_role.id :
-                    -1;
+                    -1
 
             is_mod_or_admin = message.member.roles.has(admin_role_id) ||
-                message.member.roles.has(moderator_role_id) ||
-                message.member.roles.has(tribunal_role_id);
+                message.member.roles.has(moderator_role_id)
         }
         return is_mod_or_admin || this.client.isOwner(message.author);
     }
