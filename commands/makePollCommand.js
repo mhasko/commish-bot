@@ -15,10 +15,9 @@ class MakePollCommandCommand extends Commando.Command {
             name: 'makepollcommand',
             group: 'admin',
             memberName: 'makepollcommand',
-            // aliases: ['matchmake'],
             description: 'Create the command to make a poll',
             details: '',
-            examples: ['\t!makematch'],
+            examples: ['\t!makepollcommand'],
             guildOnly: true,
             argsType: 'multiple'
         });

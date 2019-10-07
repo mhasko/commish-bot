@@ -42,7 +42,7 @@ class Helper {
         return this.notify_client.guilds.get(guild_id).members.get(member_id)
     }
 
-    getNextDayOfTheWeek(dayName, excludeToday = true, refDate = new Date()) {
+    static getNextDayOfTheWeek(dayName, excludeToday = true, refDate = new Date()) {
         const dayOfWeek = ["sun","mon","tue","wed","thu","fri","sat"]
             .indexOf(dayName.slice(0,3).toLowerCase());
         if (dayOfWeek < 0) return;

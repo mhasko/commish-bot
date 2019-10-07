@@ -44,13 +44,13 @@ client
 
             is_initialized = true;
         }
-    });
+    })
     // .on('disconnect', () => { console.warn('Disconnected!'); })
     // .on('reconnecting', () => { console.warn('Reconnecting...'); })
-    // .on('commandError', (cmd, err) => {
-    //     if(err instanceof commando.FriendlyError) return;
-    //     console.error(`Error in command ${cmd.groupID}:${cmd.memberName}`, err);
-    // })
+    .on('commandError', (cmd, err) => {
+        // if(err instanceof commando.FriendlyError) return;
+        console.error(`Error in command ${cmd.groupID}:${cmd.memberName}`, err);
+    });
     // .on('commandBlocked', (msg, reason) => {
     //     console.log(oneLine`
 	// 		Command ${msg.command ? `${msg.command.groupID}:${msg.command.memberName}` : ''}

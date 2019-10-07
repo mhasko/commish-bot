@@ -5,6 +5,7 @@
   },
   "roles": {
     "admin": "the tribunal",
-    "mod": "mods"
+    "mod": "mods",
+    "captain" : "captain"
   }
 }
