@@ -53,13 +53,13 @@ class MakeMatchCommand extends Commando.Command {
         async function categoryCheck(category, options) {
             if(category){
                 // If this category doesn't exist, create it
-                if(!server.channels.find('name', category)){
+                if(!server.channels.find( channel => channel.name === category)){ //'name', category)){
                     server.createChannel(category, "category").then(async newChannel => {
                         options.parent = newChannel;
                         return true;
                     })
                 } else {
-                    options.parent = server.channels.find('name', category);
+                    options.parent = server.channels.find(channel => channel.name === category); //'name', category)){
                 }
             }
             return true;
