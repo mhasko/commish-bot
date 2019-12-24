@@ -1,6 +1,7 @@
 const CommandGroup = {
     ADMIN: 'admin',
     BASIC: 'basic',
+    CAPTAIN: 'captain',
     NOTIFICATIONS: 'notifications',
     UTIL: 'util'
 };

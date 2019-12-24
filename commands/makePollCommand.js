@@ -13,7 +13,7 @@ class MakePollCommandCommand extends Commando.Command {
     constructor(client) {
         super(client, {
             name: 'makepollcommand',
-            group: 'admin',
+            group: consts.CommandGroup.ADMIN,
             memberName: 'makepollcommand',
             description: 'Create the command to make a poll',
             details: '',

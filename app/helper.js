@@ -1,6 +1,5 @@
 "use strict";
 
-// const log = require('loglevel').getLogger('Helper');
 const settings = require('../data/settings');
 
 class Helper {

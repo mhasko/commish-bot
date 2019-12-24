@@ -12,7 +12,7 @@ class MakeMatchCommand extends Commando.Command {
     constructor(client) {
         super(client, {
             name: 'makematch',
-            group: 'admin',
+            group: consts.CommandGroup.ADMIN,
             memberName: 'makematch',
             aliases: ['matchmake'],
             description: 'Make a match channel for 2 teams',

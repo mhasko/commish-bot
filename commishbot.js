@@ -4,6 +4,7 @@ const Commando = require('discord.js-commando');
 const path = require('path');
 const roles = require('./data/roles.json');
 const Helper = require('./app/helper');
+const constants = require('./app/constants');
 
 const client = new Commando.Client({
     prefix: '!',
@@ -16,13 +17,15 @@ let is_initialized = false;
 
 client.registry
     .registerDefaultTypes()
-    .registerGroup('admin', 'admin')
+    .registerGroup(constants.CommandGroup.ADMIN, constants.CommandGroup.ADMIN)
+    .registerGroup(constants.CommandGroup.CAPTAIN, constants.CommandGroup.CAPTAIN)
     .registerDefaultGroups()
     .registerDefaultCommands()
     // .registerCommandsIn(path.join(__dirname, 'commands'));
     .registerCommands([
         require('./commands/makematch'),
-        require('./commands/makePollCommand')
+        require('./commands/makePollCommand'),
+        require('./commands/makeProDraft')
         ]);
 
 
