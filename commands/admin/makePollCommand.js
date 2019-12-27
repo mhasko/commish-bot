@@ -2,12 +2,10 @@
 "use strict";
 
 const //log = require('loglevel').getLogger('MakeMatch'),
-    auth = require('../auth'),
     Commando = require('discord.js-commando'),
-    Helper = require('../app/helper'),
-    messages = require('../data/messages'),
-    roles = require('../data/roles'),
-    consts = require('../app/constants');
+    Helper = require('@app/helper'),
+    strings = require('@data/strings'),
+    consts = require('@app/constants');
 
 class MakePollCommandCommand extends Commando.Command {
     constructor(client) {
@@ -36,8 +34,8 @@ class MakePollCommandCommand extends Commando.Command {
         });
     }
 
-    async run(message, args) {
-        let refDate = Helper.getNextDayOfTheWeek('Wed')
+    static async run(message) {
+        let refDate = Helper.getNextDayOfTheWeek('Wed');
         let optionsString = "";
 
         //Brute forcing this string right now since weekend have afternoon options.
@@ -58,7 +56,7 @@ class MakePollCommandCommand extends Commando.Command {
         optionsString += `Tue ${refDate.getUTCMonth() + 1}/${refDate.getUTCDate()} 9p EST`;
         refDate.setDate(refDate.getDate() + 1);
 
-        message.channel.send(`pm!cmd -q "${messages.pollMessage}" -o "${optionsString}" -mc 0 -d "in 48 hours"`)
+        message.channel.send(`pm!cmd -q "${strings.pollMessage}" -o "${optionsString}" -mc 0 -d "in 48 hours"`)
 
     }
 }

@@ -1,12 +1,9 @@
 "use strict";
 
-const auth = require('../auth'),
-    request = require('request'),
+const request = require('request'),
     Commando = require('discord.js-commando'),
-    Helper = require('../app/helper'),
-    messages = require('../data/messages'),
-    roles = require('../data/roles'),
-    consts = require('../app/constants');
+    Helper = require('@app/helper'),
+    consts = require('@app/constants');
 
 class MakeProDraft extends Commando.Command {
     constructor(client) {
@@ -16,6 +13,10 @@ class MakeProDraft extends Commando.Command {
             memberName: 'makeprodraft',
             description: 'Create a ProDraft link and paste the results into the channel',
             details: '',
+            throatling: {
+                usages: 1,
+                duration: 25
+            },
             examples: ['\t!makeProDraft'],
             guildOnly: true,
             argsType: 'multiple'
@@ -36,11 +37,7 @@ class MakeProDraft extends Commando.Command {
     }
 
     // Provide a wizard to walk the user through all the options
-    async run(message, args) {
-        const server = message.guild;
-        const commishBot = Helper.getRole(server, auth.user);
-        // const pollBot = Helper.getRole(server, 'Pollmaster');
-        const restrictedRole = Helper.getRole(server, consts.CommandGroup.CAPTAIN);
+    async run(message) {
         const reactionOptions = {max: 1, time: 25000, errors: ['time']};
         const optionFilter = (reaction, user) => {
             return consts.ReactionNumbers.some((hex) => reaction.emoji.name === hex) && user.id === message.author.id;
@@ -55,13 +52,13 @@ class MakeProDraft extends Commando.Command {
             json: true,
             headers: {'Content-Type': 'application/json'},
             body: {
-                team1Name: 'blue',
-                team2Name: 'red',
-                matchName: 'matcdafdsfadfadhname'
+                team1Name: ``,
+                team2Name: ``,
+                matchName: ``
             }
         };
 
-        request(options, async function(err,response,body){
+        request(options, async function(err, response){
             const blueId = response.body.auth[0];
             const redId = response.body.auth[1];
             const draftId = response.body.id;

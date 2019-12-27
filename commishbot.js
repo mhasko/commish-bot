@@ -1,13 +1,17 @@
-const token = require('./auth.json').token;
-const owner = require('./auth.json').authorId;
+require('module-alias/register');
+
+const token = require('@root/auth.json').token;
+const owner = require('@root/auth.json').authorId;
 const Commando = require('discord.js-commando');
 const path = require('path');
-const roles = require('./data/roles.json');
-const Helper = require('./app/helper');
-const constants = require('./app/constants');
+const roles = require('@data/roles.json');
+const Helper = require('@app/helper');
+const constants = require('@app/constants');
+
+const prefix = '!cb';
 
 const client = new Commando.Client({
-    prefix: '!',
+    prefix: prefix,
     owner: owner,
     disableEveryone: true,
     unknownCommandResponse: false
@@ -19,15 +23,10 @@ client.registry
     .registerDefaultTypes()
     .registerGroup(constants.CommandGroup.ADMIN, constants.CommandGroup.ADMIN)
     .registerGroup(constants.CommandGroup.CAPTAIN, constants.CommandGroup.CAPTAIN)
+    .registerGroup(constants.CommandGroup.BASIC, constants.CommandGroup.BASIC)
     .registerDefaultGroups()
     .registerDefaultCommands()
-    // .registerCommandsIn(path.join(__dirname, 'commands'));
-    .registerCommands([
-        require('./commands/makematch'),
-        require('./commands/makePollCommand'),
-        require('./commands/makeProDraft')
-        ]);
-
+    .registerCommandsIn(path.join(__dirname, 'commands'));
 
 client
     .on('error', console.error)
@@ -51,26 +50,26 @@ client
         console.error(`Error in command ${cmd.groupID}:${cmd.memberName}`, err);
     })
     .on('commandBlocked', (msg, reason) => {
-        console.log(oneLine`
+        console.log(`
 			Command ${msg.command ? `${msg.command.groupID}:${msg.command.memberName}` : ''}
 			blocked; ${reason}
 		`);
     })
     .on('commandPrefixChange', (guild, prefix) => {
-        console.log(oneLine`
+        console.log(`
 			Prefix ${prefix === '' ? 'removed' : `changed to ${prefix || 'the default'}`}
 			${guild ? `in guild ${guild.name} (${guild.id})` : 'globally'}.
 		`);
     })
     .on('commandStatusChange', (guild, command, enabled) => {
-        console.log(oneLine`
+        console.log(`
 			Command ${command.groupID}:${command.memberName}
 			${enabled ? 'enabled' : 'disabled'}
 			${guild ? `in guild ${guild.name} (${guild.id})` : 'globally'}.
 		`);
     })
     .on('groupStatusChange', (guild, group, enabled) => {
-        console.log(oneLine`
+        console.log(`
 			Group ${group.id}
 			${enabled ? 'enabled' : 'disabled'}
 			${guild ? `in guild ${guild.name} (${guild.id})` : 'globally'}.

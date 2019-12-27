@@ -1,12 +1,12 @@
 "use strict";
 
 const //log = require('loglevel').getLogger('MakeMatch'),
-    auth = require('../auth'),
+    auth = require('@root/auth'),
     Commando = require('discord.js-commando'),
-    Helper = require('../app/helper'),
-    messages = require('../data/messages'),
-    roles = require('../data/roles'),
-    consts = require('../app/constants');
+    Helper = require('@app/helper'),
+    strings = require('@data/strings'),
+    roles = require('@data/roles'),
+    consts = require('@app/constants');
 
 class MakeMatchCommand extends Commando.Command {
     constructor(client) {
@@ -37,7 +37,7 @@ class MakeMatchCommand extends Commando.Command {
     }
 
     // Provide a wizard to walk the user through all the options
-    async run(message, args) {
+    async run(message) {
         const server = message.guild;
         const commishBot = Helper.getRole(server, auth.user);
         const pollBot = Helper.getRole(server, 'Pollmaster');
@@ -64,6 +64,7 @@ class MakeMatchCommand extends Commando.Command {
             }
             return true;
         }
+
         async function createChannelWith(blueTeam, redTeam, division, channelPrefix){
             const divisionRefRole = Helper.getRole(server, division.divisionRole);
             let permissionArray = [
@@ -95,7 +96,7 @@ class MakeMatchCommand extends Commando.Command {
             if (blueTeam && redTeam) {
                 await categoryCheck(division.category, options).then(
                     server.createChannel(newChannelName, options).then(async newChannel => {
-                        newChannel.send(`${blueTeam} ${redTeam} ${messages.newChannelMessage}`);
+                        newChannel.send(`${blueTeam} ${redTeam} ${strings.newChannelMessage}`);
                     }))
                     .catch(err => message.channel.send(`Error in category check: ${err}`));
 
@@ -106,7 +107,7 @@ class MakeMatchCommand extends Commando.Command {
         }
 
         // Prompt for and get match type (regualr season, playoffs, other)
-        const matchTypeMessage = await message.channel.send(`${messages.wizard.whatType}`);
+        const matchTypeMessage = await message.channel.send(`${strings.makeMatchWizard.whatType}`);
         for (const [index, type] of numberOfOptions.entries()){
             await matchTypeMessage.react(consts.ReactionNumbers[index + 1]);
         }
@@ -133,7 +134,7 @@ class MakeMatchCommand extends Commando.Command {
         Object.keys(roles).forEach((key, index) => {
             divisionOptions += `${consts.ReactionNumbers[index + 1]}: ${key}   `
         });
-        const divisionMessage = await message.channel.send(`${messages.wizard.whatDivision}\n${divisionOptions}`);
+        const divisionMessage = await message.channel.send(`${strings.makeMatchWizard.whatDivision}\n${divisionOptions}`);
         for(const [index, div] of Object.keys(roles).entries()){
             await divisionMessage.react(consts.ReactionNumbers[index + 1])
         }
@@ -149,7 +150,7 @@ class MakeMatchCommand extends Commando.Command {
         });
 
         // Prompt for and get blue team info
-        const homeTeamMessage = await message.channel.send(`${messages.wizard.whatHomeTeam}\n${teamOptions}`);
+        const homeTeamMessage = await message.channel.send(`${strings.makeMatchWizard.whatHomeTeam}\n${teamOptions}`);
         for(const [index, team] of Object.keys(division.teams).entries()){
             await homeTeamMessage.react(consts.ReactionNumbers[index + 1]);
         }
@@ -157,11 +158,11 @@ class MakeMatchCommand extends Commando.Command {
         let blueTeamRole = Helper.getRole(server, teamMap[ homeCollected.first().emoji.name]);
 
         // Prompt for and get red team info
-        const awayTeamMessage = await message.channel.send(`${messages.wizard.whatAwayTeam}\n${teamOptions}`);
+        const awayTeamMessage = await message.channel.send(`${strings.makeMatchWizard.whatAwayTeam}\n${teamOptions}`);
         for(const [index, team] of Object.keys(division.teams).entries()){
             await awayTeamMessage.react(consts.ReactionNumbers[index + 1]);
         }
-        const awayCollected = await awayTeamMessage.awaitReactions(optionFilter, reactionOptions)
+        const awayCollected = await awayTeamMessage.awaitReactions(optionFilter, reactionOptions);
         let redTeamRole = Helper.getRole(server, teamMap[awayCollected.first().emoji.name]);
 
         //Finally, create the channel with all the info prompted for by the bot
