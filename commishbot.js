@@ -1,12 +1,11 @@
 require('module-alias/register');
 
-const token = require('@root/auth.json').token;
-const owner = require('@root/auth.json').authorId;
 const Commando = require('discord.js-commando');
 const path = require('path');
-const roles = require('@data/roles.json');
-const Helper = require('@app/helper');
+const token = require('@root/auth.json').token;
+const owner = require('@root/auth.json').authorId;
 const constants = require('@app/constants');
+const Helper = require('@app/helper');
 
 const prefix = '!cb';
 
@@ -25,7 +24,7 @@ client.registry
     .registerGroup(constants.CommandGroup.CAPTAIN, constants.CommandGroup.CAPTAIN)
     .registerGroup(constants.CommandGroup.BASIC, constants.CommandGroup.BASIC)
     .registerDefaultGroups()
-    .registerDefaultCommands()
+    // .registerDefaultCommands()
     .registerCommandsIn(path.join(__dirname, 'commands'));
 
 client

@@ -1,12 +1,11 @@
 "use strict";
 
-const //log = require('loglevel').getLogger('MakeMatch'),
+const Commando = require('discord.js-commando'),
     auth = require('@root/auth'),
-    Commando = require('discord.js-commando'),
+    consts = require('@app/constants'),
     Helper = require('@app/helper'),
-    strings = require('@data/strings'),
     roles = require('@data/roles'),
-    consts = require('@app/constants');
+    strings = require('@data/strings');
 
 class MakeMatchCommand extends Commando.Command {
     constructor(client) {

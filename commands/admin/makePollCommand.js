@@ -1,11 +1,10 @@
 
 "use strict";
 
-const //log = require('loglevel').getLogger('MakeMatch'),
-    Commando = require('discord.js-commando'),
+const Commando = require('discord.js-commando'),
+    consts = require('@app/constants'),
     Helper = require('@app/helper'),
-    strings = require('@data/strings'),
-    consts = require('@app/constants');
+    strings = require('@data/strings');
 
 class MakePollCommandCommand extends Commando.Command {
     constructor(client) {
@@ -25,7 +24,7 @@ class MakePollCommandCommand extends Commando.Command {
                 if (!Helper.isBotChannel(message)) {
                     return true;
                 }
-                if (!Helper.isManagement(message)) {
+                if (!Helper.isManagement(message) ) {
                     return ['unauthorized', message.reply('You are not authorized to use this command.')];
                 }
             }
@@ -34,7 +33,7 @@ class MakePollCommandCommand extends Commando.Command {
         });
     }
 
-    static async run(message) {
+    async run(message) {
         let refDate = Helper.getNextDayOfTheWeek('Wed');
         let optionsString = "";
 
