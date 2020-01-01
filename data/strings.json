@@ -6,5 +6,11 @@
     "whatDivision": "What division are you making this channel for?",
     "whatHomeTeam": "Which team is the home team?",
     "whatAwayTeam": "Which team is the away team?"
+  },
+  "makeProDraft": {
+    "blueTeamTri": "What is the tricode for the blue side team?",
+    "redTeamTri": "What is the tricode for the red side team?",
+    "draftTitle": "What is the title for the draft?",
+    "timeout": "Prodraft creation timed out, this request has been canceled. Please try again."
   }
 }

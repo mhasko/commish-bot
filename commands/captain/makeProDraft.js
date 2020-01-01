@@ -3,7 +3,8 @@
 const request = require('request'),
     Commando = require('discord.js-commando'),
     consts = require('@app/constants'),
-    Helper = require('@app/helper');
+    Helper = require('@app/helper'),
+    strings = require('@data/strings');
 
 class MakeProDraft extends Commando.Command {
     constructor(client) {
@@ -15,6 +16,26 @@ class MakeProDraft extends Commando.Command {
             details: '',
             examples: ['\t!makeProDraft'],
             guildOnly: true,
+            args: [
+                {
+                    key: 'blueName',
+                    prompt: strings.makeProDraft.blueTeamTri,
+                    type: 'string',
+                    wait: 10
+                },
+                {
+                    key: 'redName',
+                    prompt: strings.makeProDraft.redTeamTri,
+                    type: 'string',
+                    wait: 10
+                },
+                {
+                    key: 'matchName',
+                    prompt: strings.makeProDraft.draftTitle,
+                    type: 'string',
+                    wait: 15
+                }
+            ],
             throttling: {
                 usages: 2,
                 duration: 60,
@@ -27,7 +48,7 @@ class MakeProDraft extends Commando.Command {
                     return false;
                 }
                 if(!Helper.isCaptain(message)) {
-                    return ['unauthorized', message.reply('You are not authorized to use this command.')];
+                    return ['unauthorized', message.reply('Only team captains can use this command.')];
                 }
             }
 
@@ -35,68 +56,42 @@ class MakeProDraft extends Commando.Command {
         });
     }
 
-    // Provide a wizard to walk the user through all the options
-    async run(message) {
-        let blueName = 'blu';
-        let redName = 'red';
-        let matchName = '';
+    async run(message, { blueName, redName, matchName }) {
+        // validate that we have inputs, and if so, POST the data to the prodraft website
+        if(blueName && redName && matchName && message){
+            await this.postToProDraft(blueName.toUpperCase(), redName.toUpperCase(), matchName, message);
+        }
+    }
 
+    async postToProDraft(blue, red, title, message) {
         const prodraftRoot = "http://prodraft.leagueoflegends.com";
         const locale = "en_US";
-        const filter = m => m;
 
-        await message.channel.send(`What is the tricode for the blue side team?`);
-        const blueTeamName = await message.channel.awaitMessages(filter, { max: 1, time: 10000, errors: ['time'] })
-            .then(collected =>  {
-                blueName = collected.first();
-            })
-            .catch(collected => {
-                message.channel.send(`ProDraft canceld, timeout`);
-                return false;
-            });
-
-        await message.channel.send(`What is the tricode for the red side team?`);
-        const redTeamName = await message.channel.awaitMessages(filter, { max: 1, time: 10000, errors: ['time'] })
-            .then(collected =>  {
-                redName = collected.first();
-            })
-            .catch(collected => {
-                message.channel.send(`ProDraft canceld, timeout`);
-                return false;
-            });
-
-        await message.channel.send(`What is the title for the draft?`);
-        const titleName = await message.channel.awaitMessages(filter, { max: 1, time: 10000, errors: ['time'] })
-            .then(collected =>  {
-                matchName = collected.first();
-            })
-            .catch(collected => {
-                message.channel.send(`ProDraft canceld, timeout`);
-                return false;
-            });
-
+        // Options object that request needs to make the POST
         let options = {
             uri: `http://prodraft.leagueoflegends.com/draft`,
             method: 'POST',
             json: true,
             headers: {'Content-Type': 'application/json'},
             body: {
-                team1Name: blueName.content.toUpperCase(),
-                team2Name: redName.content.toUpperCase(),
-                matchName: matchName.content
+                team1Name: blue,
+                team2Name: red,
+                matchName: title
             }
         };
 
+        // Make the POST, and if we get data in the response object, parse out the details so we can
+        // reverse engineer the urls
         request(options, async function(err, response){
             const blueId = response.body.auth[0];
             const redId = response.body.auth[1];
             const draftId = response.body.id;
 
-            await message.channel.send(`Blue draft link is: ${prodraftRoot}/?draft=${draftId}&auth=${blueId}`);
-            await message.channel.send(`Red draft link is: ${prodraftRoot}/?draft=${draftId}&auth=${redId}`);
-            await message.channel.send(`Spectator link is: ${prodraftRoot}/?draft=${draftId}&locale=${locale}`);
+            // Send the draft links to the channel
+            await message.channel.send(`(${blue}): Blue side draft link is: ${prodraftRoot}/?draft=${draftId}&auth=${blueId}\n.\n.\n`);
+            await message.channel.send(`(${red}): Red side draft link is: ${prodraftRoot}/?draft=${draftId}&auth=${redId}\n.\n.\n`);
+            await message.channel.send(`(SPECTATOR): Spectator draft link is: ${prodraftRoot}/?draft=${draftId}&locale=${locale}\n`);
         });
-
     }
 }
 
