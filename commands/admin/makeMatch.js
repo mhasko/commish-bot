@@ -64,8 +64,11 @@ class MakeMatchCommand extends Commando.Command {
             return true;
         }
 
-        async function createChannelWith(blueTeam, redTeam, division, channelPrefix){
+        async function createChannelWith(blueTeam, redTeam, division, channelPrefix, channel){
             const divisionRefRole = Helper.getRole(server, division.divisionRole);
+            if(!blueTeam || !redTeam || !division){
+                channel.send(`Error generating channel, canceling out.  Blueteam is ${blueTeam}  Redteam is ${redTeam} Division is ${division}`)
+            }
             let permissionArray = [
                 {
                     id: server.defaultRole.id,
@@ -131,7 +134,7 @@ class MakeMatchCommand extends Commando.Command {
         // Prompt for and get division
         let divisionOptions = '';
         Object.keys(roles).forEach((key, index) => {
-            divisionOptions += `${consts.ReactionNumbers[index + 1]}: ${key}   `
+            divisionOptions += `${consts.ReactionNumbers[index + 1]}: ${key} \n`
         });
         const divisionMessage = await message.channel.send(`${strings.makeMatchWizard.whatDivision}\n${divisionOptions}`);
         for(const [index, div] of Object.keys(roles).entries()){
@@ -165,7 +168,7 @@ class MakeMatchCommand extends Commando.Command {
         let redTeamRole = Helper.getRole(server, teamMap[awayCollected.first().emoji.name]);
 
         //Finally, create the channel with all the info prompted for by the bot
-        createChannelWith(blueTeamRole, redTeamRole, division, prefixString);
+        createChannelWith(blueTeamRole, redTeamRole, division, prefixString, message.channel);
     }
 }
 
