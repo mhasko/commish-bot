@@ -1,103 +1,167 @@
 {
-  "ionian":{
+  "ionian": {
     "teams": {
-      "Washed Up One Tricks": {
-        "name": "Washed Up One Tricks",
-        "abvrName": "WUOT",
-        "discordRole": "Washed Up One Tricks",
-        "discordIcon": ":wuot:"
+      "Helix": {
+        "name": "Helix",
+        "abvrName": "HLX",
+        "discordRole": "Helix",
+        "discordIcon": ":helix2:"
       },
-      "Too Fat to Kite": {
-        "name": "Too Fat to Kite",
-        "abvrName": "TFTK",
-        "discordRole": "Too Fat to Kite",
-        "discordIcon": ":tftk:"
+      "Team31": {
+        "name": "Team31",
+        "abvrName": "Team31",
+        "discordRole": "Team31",
+        "discordIcon": ""
       },
-      "Guardian Gaming": {
-        "name": "Guardian Gaming",
-        "abvrName": "GG",
-        "discordRole": "Guardian Gaming",
-        "discordIcon": ":gg:"
+      "Reformed Cats": {
+        "name": "Reformed Cats",
+        "abvrName": "CATS",
+        "discordRole": "Reformed Cats",
+        "discordIcon": ":refcats2:"
       },
-      "The Happy Campers GG": {
-        "name": "The Happy Campers GG",
-        "abvrName": "THC",
-        "discordRole": "TheHappyCampersGG",
-        "discordIcon": ":thc:"
+      "Team7": {
+        "name": "Team7",
+        "abvrName": "Team7",
+        "discordRole": "Team7",
+        "discordIcon": ""
       },
-      "Wasted Potential": {
-        "name": "Wasted Potential",
-        "abvrName": "WP",
-        "discordRole": "Wasted Potential",
-        "discordIcon": ":three:"
+      "The Dead Allegiance": {
+        "name": "The Dead Allegiance",
+        "abvrName": "TDA",
+        "discordRole": "The Dead Allegiance",
+        "discordIcon": ":tda2:"
       },
-      "Nerdy Pandas": {
-        "name": "Nerdy Pandas",
-        "abvrName": "NP",
-        "discordRole": "Nerdy Pandas",
-        "discordIcon": ":np:"
-      },
-      "Team Tempest": {
-        "name": "Team Tempest",
-        "abvrName": "TT",
-        "discordRole": "Team Tempest",
-        "discordIcon": ":tt:"
+      "Spaceman Spiff": {
+        "name": "Spaceman Spiff",
+        "abvrName": "SS",
+        "discordRole": "Spaceman Spiff",
+        "discordIcon": ":spacemanspiff2:"
       }
     },
     "category": "Ionian Division",
     "divisionRole": "ionian ref",
-    "tribunal": [],
-    "mods": []
+    "tribunal": ["Karen Franz"],
+    "mods": ["Styxnkrons"]
   },
   "shuriman": {
     "teams": {
-      "Glorified Banner Minions": {
-        "name": "Glorified Banner Minions",
-        "abvrName": "GBM",
-        "discordRole": "Glorified Banner Minions",
-        "discordIcon": ":gbm:"
+      "Cloud 10": {
+        "name": "Cloud 10",
+        "abvrName": "C10",
+        "discordRole": "Cloud 10",
+        "discordIcon": ":cloud10:"
       },
-      "Ravenous Kumquats": {
-        "name": "Ravenous Kumquats",
-        "abvrName": "RK",
-        "discordRole": "Ravenous Kumquats",
-        "discordIcon": ":rq:"
+      "Team Billy": {
+        "name": "Team Billy",
+        "abvrName": "TB",
+        "discordRole": "Team Billy",
+        "discordIcon": ":billy:"
       },
-      "Gank Top Plz": {
-        "name": "Gank Top Plz",
-        "abvrName": "GTP",
-        "discordRole": "Gank Top Plz",
-        "discordIcon": ":gtp:"
+      "Fiesta Fathers": {
+        "name": "Fiesta Fathers",
+        "abvrName": "FF",
+        "discordRole": "Fiesta Fathers",
+        "discordIcon": ""
       },
-      "Delicious Daddios": {
-        "name": "Delicious Daddios",
-        "abvrName": "DD",
-        "discordRole": "Delicious Daddios",
-        "discordIcon": ":dd:"
-      },
-      "ABCDEsports": {
-        "name": "ABCDEsports",
-        "abvrName": "ABCD",
-        "discordRole": "ABCDEsports",
-        "discordIcon": ":abcd:"
+      "Team11": {
+        "name": "Team11",
+        "abvrName": "Team11",
+        "discordRole": "Team11",
+        "discordIcon": ""
       },
       "The Dandelion Knights": {
         "name": "The Dandelion Knights",
         "abvrName": "TDK",
         "discordRole": "The Dandelion Knights",
         "discordIcon": ":tdk:"
+      }
+    },
+    "category": "Shuriman Division",
+    "divisionRole": "shuriman ref",
+    "tribunal": ["Foozlebamboozle"],
+    "mods": ["DeltaTerra"]
+  },
+  "piltover": {
+    "teams": {
+      "Team10": {
+        "name": "Team10",
+        "abvrName": "",
+        "discordRole": "Team10",
+        "discordIcon": ""
       },
       "Kamikaze Penguins": {
         "name": "Kamikaze Penguins",
         "abvrName": "KP",
         "discordRole": "Kamikaze Penguins",
         "discordIcon": ":kp:"
+      },
+      "Shien's Samurais": {
+        "name": "Shien's Samurais",
+        "abvrName": "TSM",
+        "discordRole": "Shien's Samurais",
+        "discordIcon": ":shien:"
+      },
+      "Team29": {
+        "name": "Team29",
+        "abvrName": "",
+        "discordRole": "Team29",
+        "discordIcon": ""
+      },
+      "Anarchy Blue": {
+        "name": "Anarchy Blue",
+        "abvrName": "AB",
+        "discordRole": "Anarchy Blue",
+        "discordIcon": ":ab:"
+      },
+      "This Team": {
+        "name": "This Team",
+        "abvrName": "TT",
+        "discordRole": "This Team",
+        "discordIcon": ":tt:"
       }
     },
-    "category": "Shuriman Division",
-    "divisionRole": "shuriman ref",
-    "tribunal": [],
-    "mods": []
+    "category": "Piltover Division",
+    "divisionRole": "piltover ref",
+    "tribunal": ["Scattercat"],
+    "mods": ["Aileronroll"]
+  },
+  "freljord": {
+    "teams": {
+      "Gold Swamp Salamanders": {
+        "name": "Gold Swamp Salamanders",
+        "abvrName": "GSS",
+        "discordRole": "Gold Swamp Salamanders",
+        "discordIcon": ":gss:"
+      },
+      "Sentinels": {
+        "name": "Sentinels",
+        "abvrName": "SENT",
+        "discordRole": "Sentinels",
+        "discordIcon": ":sent:"
+      },
+      "Vison Score 4": {
+        "name": "Vison Score 4",
+        "abvrName": "VS4",
+        "discordRole": "Vison Score 4",
+        "discordIcon": ""
+      },
+      "The Dirty Cheese": {
+        "name": "The Dirty Cheese",
+        "abvrName": "TDC",
+        "discordRole": "The Dirty Cheese",
+        "discordIcon": ""
+      },
+      "CEAL Team 6": {
+        "name": "CEAL Team 6",
+        "abvrName": "CT6",
+        "discordRole": "CEAL Team 6",
+        "discordIcon": ":ct6:"
+      }
+    },
+    "category": "Freljord Division",
+    "divisionRole": "freljord ref",
+    "tribunal": ["Mansdferg"],
+    "mods": ["Lightning13z"]
   },
   "noxian": {
     "teams": {
@@ -106,12 +170,6 @@
         "abvrName": "SUEC",
         "discordRole": "Stars United Esports Club",
         "discordIcon": ":starsu:"
-      },
-      "Engima": {
-        "name": "Enigma",
-        "abvrName": "Eng",
-        "discordRole": "Enigma",
-        "discordIcon": ":eng:"
       },
       "Bronze V Age": {
         "name": "Bronze V Age",
@@ -125,60 +183,66 @@
         "discordRole": "Team Renegatus",
         "discordIcon": ":tr:"
       },
-      "Keyboard Cats": {
-        "name": "Keyboard Cats",
-        "abvrName": "KC",
-        "discordRole": "Keyboard Cats",
-        "discordIcon": ":kc:"
+      "The MisClicks": {
+        "name": "The MisClicks",
+        "abvrName": "TMC",
+        "discordRole": "The MisClicks",
+        "discordIcon": ""
+      },
+      "Blood Oath Kings": {
+        "name": "Blood Oath Kings",
+        "abvrName": "BOK",
+        "discordRole": "Blood Oath Kings",
+        "discordIcon": ":bok:"
+      },
+      "Broken R Button": {
+        "name": "Broken R Button",
+        "abvrName": "BRB",
+        "discordRole": "Broken R Button",
+        "discordIcon": ":brb:"
       }
     },
     "category": "Noxian Division",
     "divisionRole": "noxian ref",
-    "tribunal": [],
-    "mods": []
+    "tribunal": ["TheAmo"],
+    "mods": ["C7 Goiner"]
   },
   "demacian": {
     "teams": {
-      "Defiant": {
-        "name": "Defiant",
-        "abvrName": "DEF",
-        "discordRole": "Defiant",
-        "discordIcon": "def"
+      "Team17": {
+        "name": "Team17",
+        "abvrName": "TBA",
+        "discordRole": "",
+        "discordIcon": ""
       },
-      "Sentinels": {
-        "name": "Sentinels",
-        "abvrName": "SENT",
-        "discordRole": "Sentinels",
-        "discordIcon": ":one:"
+      "Gags Gaming": {
+        "name": "Gags Gaming",
+        "abvrName": "GAGS",
+        "discordRole": "Gags Gaming",
+        "discordIcon": ":gags:"
       },
-      "Team Support Main": {
-        "name": "Team Support Main",
-        "abvrName": "TSM",
-        "discordRole": "Team Support Main",
-        "discordIcon": ":tsm:"
+      "Aggressive Enchanters": {
+        "name": "Aggressive Enchanters",
+        "abvrName": "agen",
+        "discordRole": "Aggressive Enchanters",
+        "discordIcon": ""
       },
-      "Men's Women's Torment": {
-        "name": "Men's Women's Torment",
-        "abvrName": "MWT",
-        "discordRole": "Men's Women's Torment",
-        "discordIcon": ":mwt:"
+      "Clout 7": {
+        "name": "Clout 7",
+        "abvrName": "C7",
+        "discordRole": "Clout 7",
+        "discordIcon": ":c7:"
       },
-      "Incendium Gaming": {
-        "name": "Incendium Gaming",
-        "abvrName": "IG",
-        "discordRole": "Incendium Gaming",
-        "discordIcon": ":ig:"
-      },
-      "Amber O2": {
-        "name": "Amber O2",
-        "abvrName": "AO2",
-        "discordRole": "Amber O2",
-        "discordIcon": ":ao2:"
+      "Mundolicious": {
+        "name": "Mundolicious",
+        "abvrName": "MNDO",
+        "discordRole": "Mundolicious",
+        "discordIcon": ":mndo:"
       }
     },
     "category": "Demacian Division",
     "divisionRole": "demacian ref",
-    "tribunal": [],
-    "mods": []
+    "tribunal": ["King Majora"],
+    "mods": ["The Cpt Goose", "S01 Reaver"]
   }
 }
