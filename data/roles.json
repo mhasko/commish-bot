@@ -7,11 +7,11 @@
         "discordRole": "Helix",
         "discordIcon": ":helix2:"
       },
-      "Team31": {
-        "name": "Team31",
-        "abvrName": "Team31",
-        "discordRole": "Team31",
-        "discordIcon": ""
+      "Washed Up One Tricks": {
+        "name": "Washed Up One Tricks",
+        "abvrName": "WUOT",
+        "discordRole": "Washed Up One Tricks",
+        "discordIcon": ":wuot2:"
       },
       "Reformed Cats": {
         "name": "Reformed Cats",
@@ -19,11 +19,11 @@
         "discordRole": "Reformed Cats",
         "discordIcon": ":refcats2:"
       },
-      "Team7": {
-        "name": "Team7",
-        "abvrName": "Team7",
-        "discordRole": "Team7",
-        "discordIcon": ""
+      "Team Tempest": {
+        "name": "Team Tempest",
+        "abvrName": "TT",
+        "discordRole": "Team Tempest",
+        "discordIcon": ":tt2:"
       },
       "The Dead Allegiance": {
         "name": "The Dead Allegiance",
@@ -63,10 +63,10 @@
         "discordRole": "Fiesta Fathers",
         "discordIcon": ""
       },
-      "Team11": {
-        "name": "Team11",
-        "abvrName": "Team11",
-        "discordRole": "Team11",
+      "Avatars of Runeterra": {
+        "name": "Avatars of Runeterra",
+        "abvrName": "AoR",
+        "discordRole": "Avatars of Runeterra",
         "discordIcon": ""
       },
       "The Dandelion Knights": {
@@ -83,10 +83,10 @@
   },
   "piltover": {
     "teams": {
-      "Team10": {
-        "name": "Team10",
-        "abvrName": "",
-        "discordRole": "Team10",
+      "Ravenous Kumquats": {
+        "name": "Ravenous Kumquats",
+        "abvrName": "RK",
+        "discordRole": "Ravenous Kumquats",
         "discordIcon": ""
       },
       "Kamikaze Penguins": {
@@ -101,10 +101,10 @@
         "discordRole": "Shien's Samurais",
         "discordIcon": ":shien:"
       },
-      "Team29": {
-        "name": "Team29",
+      "Piltover Team 3": {
+        "name": "Piltover Team 3",
         "abvrName": "",
-        "discordRole": "Team29",
+        "discordRole": "Piltover Team 3",
         "discordIcon": ""
       },
       "Anarchy Blue": {
@@ -209,17 +209,17 @@
   },
   "demacian": {
     "teams": {
-      "Team17": {
-        "name": "Team17",
-        "abvrName": "TBA",
-        "discordRole": "",
-        "discordIcon": ""
+      "Aced Venturas": {
+        "name": "Aced Venturas",
+        "abvrName": "AV",
+        "discordRole": "Aced Venturas",
+        "discordIcon": ":acedvent2:"
       },
       "Gags Gaming": {
         "name": "Gags Gaming",
         "abvrName": "GAGS",
         "discordRole": "Gags Gaming",
-        "discordIcon": ":gags:"
+        "discordIcon": ":gags2:"
       },
       "Aggressive Enchanters": {
         "name": "Aggressive Enchanters",
@@ -231,13 +231,13 @@
         "name": "Clout 7",
         "abvrName": "C7",
         "discordRole": "Clout 7",
-        "discordIcon": ":c7:"
+        "discordIcon": ":c72:"
       },
       "Mundolicious": {
         "name": "Mundolicious",
         "abvrName": "MNDO",
         "discordRole": "Mundolicious",
-        "discordIcon": ":mndo:"
+        "discordIcon": ":mndo2:"
       }
     },
     "category": "Demacian Division",
