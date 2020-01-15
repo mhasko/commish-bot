@@ -31,10 +31,10 @@
         "discordRole": "The Dead Allegiance",
         "discordIcon": ":tda2:"
       },
-      "Spaceman Spiff": {
-        "name": "Spaceman Spiff",
+      "Spacemen Spiff": {
+        "name": "Spacemen Spiff",
         "abvrName": "SS",
-        "discordRole": "Spaceman Spiff",
+        "discordRole": "Spacemen Spiff",
         "discordIcon": ":spacemanspiff2:"
       }
     },
@@ -101,10 +101,10 @@
         "discordRole": "Shien's Samurais",
         "discordIcon": ":shien:"
       },
-      "Piltover Team 3": {
-        "name": "Piltover Team 3",
+      "Flow Gaming": {
+        "name": "Flow Gaming",
         "abvrName": "",
-        "discordRole": "Piltover Team 3",
+        "discordRole": "Flow Gaming",
         "discordIcon": ""
       },
       "Anarchy Blue": {
@@ -139,10 +139,10 @@
         "discordRole": "Sentinels",
         "discordIcon": ":sent:"
       },
-      "Vison Score 4": {
-        "name": "Vison Score 4",
+      "Vision Score 4": {
+        "name": "Vision Score 4",
         "abvrName": "VS4",
-        "discordRole": "Vison Score 4",
+        "discordRole": "Vision Score 4",
         "discordIcon": ""
       },
       "The Dirty Cheese": {
