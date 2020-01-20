@@ -127,10 +127,10 @@
   },
   "freljord": {
     "teams": {
-      "Gold Swamp Salamanders": {
-        "name": "Gold Swamp Salamanders",
+      "Gold Salamanders": {
+        "name": "Gold Salamanders",
         "abvrName": "GSS",
-        "discordRole": "Gold Swamp Salamanders",
+        "discordRole": "Gold Salamanders",
         "discordIcon": ":gss:"
       },
       "Sentinels": {
