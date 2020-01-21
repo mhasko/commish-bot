@@ -5,6 +5,7 @@ const Commando = require('discord.js-commando'),
     consts = require('@app/constants'),
     Helper = require('@app/helper'),
     roles = require('@data/roles'),
+    settings = require('@data/settings'),
     strings = require('@data/strings');
 
 class MakeMatchCommand extends Commando.Command {
@@ -40,6 +41,7 @@ class MakeMatchCommand extends Commando.Command {
         const server = message.guild;
         const commishBot = Helper.getRole(server, auth.user);
         const pollBot = Helper.getRole(server, 'Pollmaster');
+        const modRole = Helper.getRole(server, settings.roles.mod);
         const restrictedRole = Helper.getRole(server, 'Restricted');
         const reactionOptions = {max: 1, time: 25000, errors: ['time']};
         const optionFilter = (reaction, user) => {
@@ -86,6 +88,7 @@ class MakeMatchCommand extends Commando.Command {
             if(commishBot) {permissionArray.push({id: commishBot.id, allow: ['VIEW_CHANNEL']})}
             if(pollBot) {permissionArray.push({id: pollBot.id, allow: ['VIEW_CHANNEL']})}
             if(divisionRefRole) {permissionArray.push({id: divisionRefRole.id, allow: ['VIEW_CHANNEL']})}
+            if(modRole) {permissionArray.push({id: modRole.id, allow: ['VIEW_CHANNEL']})}
             if(restrictedRole) {permissionArray.push({id: restrictedRole.id, deny: ['SEND_MESSAGES']})}
 
             let options = {
