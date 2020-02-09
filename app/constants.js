@@ -20,10 +20,16 @@ const MatchSide = {
     RED_SIDE: 1
 };
 
+const MatchTypes = {
+    WEEKLY: 1,
+    PLAYOFFS: 2,
+    OTHER: 3
+};
+
 const NumOfWeeks = [1,2,3,4,5,6,7];
 
 const NumOfPlayoffs = ["0th Round", "1st Round", "2nd Round", "3rd Round", "4th Round"]
 
 const ReactionNumbers = ["\u0030\u20E3","\u0031\u20E3","\u0032\u20E3","\u0033\u20E3","\u0034\u20E3","\u0035\u20E3", "\u0036\u20E3","\u0037\u20E3","\u0038\u20E3","\u0039\u20E3"];
 
-module.exports = {CommandGroup, Divisions, MatchSide, NumOfWeeks, NumOfPlayoffs, ReactionNumbers};
+module.exports = {CommandGroup, Divisions, MatchSide, MatchTypes, NumOfWeeks, NumOfPlayoffs, ReactionNumbers};

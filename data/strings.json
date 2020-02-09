@@ -1,11 +1,12 @@
 {
-  "newChannelMessage": "This is the match channel for your upcoming game.  Please try to work out a date, time, and what side the home team will choose by Monday (The first listed team of the channel is the home team).  Once this determined, one of the team captains should message this channel in the following format:\n\n \\`@__HOMETEAM__and @__AWAYTEAM__ have scheduled the match to be played on __DATE__ at __TIME__. __HOMETEAM__ has chosen __SIDE__ for game 1.  @__Division Ref__  please place this match on the stream team schedule. Thanks!!\\` \n\n(Replacing every underlined thing with the appropoate values or Discord tags.)\n\nIf you cannot reach a decision by Monday morning EST, a poll will be created, and what ever time slot has the highest votes at the end of the poll will be your enforced match time, with both teams using subs to fill in games of their rosters.",
   "pollMessage": "@everyone Please cast your vote for what times you are able to play.  This poll will close in 48 hours, and if the teams have not come to a mutual decision on their match time, then which ever time slot polls highest will be the enforced match time. Teams will need obtain subs for any missing member.",
   "makeMatchWizard": {
     "whatType": "What type of match is this?\n:one:: Regular Season\n:two:: Playoffs\n:three:: Other",
     "whatDivision": "What division are you making this channel for?",
     "whatHomeTeam": "Which team is the home team?",
-    "whatAwayTeam": "Which team is the away team?"
+    "whatAwayTeam": "Which team is the away team?",
+    "newChannelMessageBye": "You have a bye week this week!",
+    "newChannelMessage": "This is the match channel for your upcoming game.  Please try to work out a date, time, and what side the home team will choose by Monday (The first listed team of the channel is the home team).  Once this determined, one of the team captains should message this channel in the following format:\n\n \\`@__HOMETEAM__and @__AWAYTEAM__ have scheduled the match to be played on __DATE__ at __TIME__. __HOMETEAM__ has chosen __SIDE__ for game 1.  @__Division Ref__  please place this match on the stream team schedule. Thanks!!\\` \n\n(Replacing every underlined thing with the appropoate values or Discord tags.)\n\nIf you cannot reach a decision by Monday morning EST, a poll will be created, and what ever time slot has the highest votes at the end of the poll will be your enforced match time, with both teams using subs to fill in games of their rosters."
   },
   "makeProDraft": {
     "blueTeamTri": "What is the tricode for the blue side team?",

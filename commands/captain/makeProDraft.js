@@ -21,19 +21,19 @@ class MakeProDraft extends Commando.Command {
                     key: 'blueName',
                     prompt: strings.makeProDraft.blueTeamTri,
                     type: 'string',
-                    wait: 10
+                    wait: 15
                 },
                 {
                     key: 'redName',
                     prompt: strings.makeProDraft.redTeamTri,
                     type: 'string',
-                    wait: 10
+                    wait: 15
                 },
                 {
                     key: 'matchName',
                     prompt: strings.makeProDraft.draftTitle,
                     type: 'string',
-                    wait: 15
+                    wait: 25
                 }
             ],
             throttling: {

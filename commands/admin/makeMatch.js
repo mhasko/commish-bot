@@ -66,25 +66,45 @@ class MakeMatchCommand extends Commando.Command {
             return true;
         }
 
-        async function createChannelWith(blueTeam, redTeam, division, channelPrefix, channel){
-            const divisionRefRole = Helper.getRole(server, division.divisionRole);
-            if(!blueTeam || !redTeam || !division){
+        async function createByeWeekWith(team, division, channelPrefix, channel) {
+            if(!team || !division){
+                channel.send(`Error generating channel, canceling out.  Team is ${team} Division is ${division}`)
+            }
+
+            let prefix = '';
+            if(channelPrefix){prefix = `${channelPrefix}`;}
+            const newChannelName = `${prefix} -- BYE WEEK! -- ${team.name}`;
+            const newChannelMessage = `${team} ${strings.makeMatchWizard.newChannelMessageBye}`;
+            await createChannel(newChannelName, newChannelMessage, [team.id], division, channel);
+        }
+
+        async function createMatchChannelWith(blueTeam, redTeam, division, channelPrefix, channel) {
+            if (!blueTeam || !redTeam || !division) {
                 channel.send(`Error generating channel, canceling out.  Blueteam is ${blueTeam}  Redteam is ${redTeam} Division is ${division}`)
             }
+            const teamIds = [blueTeam.id, redTeam.id];
+
+            let prefix = '';
+            if (channelPrefix) {prefix = `${channelPrefix}`;}
+            const newChannelName = `${prefix} ${blueTeam.name} vs ${redTeam.name}`;
+            const newChannelMessage = `${blueTeam} ${redTeam} ${strings.makeMatchWizard.newChannelMessage}`;
+            await createChannel(newChannelName, newChannelMessage, teamIds, division, channel);
+        }
+
+        async function createChannel(newChannelName, newMessage, teamIds, division, channel){
+            const divisionRefRole = Helper.getRole(server, division.divisionRole);
             let permissionArray = [
                 {
                     id: server.defaultRole.id,
                     deny: ['VIEW_CHANNEL'],
-                },
-                {
-                    id: blueTeam.id,
-                    allow: ['VIEW_CHANNEL'],
-                },
-                {
-                    id: redTeam.id,
-                    allow: ['VIEW_CHANNEL'],
                 }
             ];
+            for (const teamId in teamIds) {
+                permissionArray.push(             {
+                    id: teamId,
+                    allow: ['VIEW_CHANNEL'],
+                })
+            }
             if(commishBot) {permissionArray.push({id: commishBot.id, allow: ['VIEW_CHANNEL']})}
             if(pollBot) {permissionArray.push({id: pollBot.id, allow: ['VIEW_CHANNEL']})}
             if(divisionRefRole) {permissionArray.push({id: divisionRefRole.id, allow: ['VIEW_CHANNEL']})}
@@ -95,20 +115,12 @@ class MakeMatchCommand extends Commando.Command {
                 type: 'text',
                 permissionOverwrites: permissionArray
             };
-            let prefix = '';
-            if(channelPrefix){prefix = `${channelPrefix}`;}
-            let newChannelName = `${prefix} ${blueTeam.name} vs ${redTeam.name}`;
-            if (blueTeam && redTeam) {
-                await categoryCheck(division.category, options).then(
-                    server.createChannel(newChannelName, options).then(async newChannel => {
-                        newChannel.send(`${blueTeam} ${redTeam} ${strings.newChannelMessage}`);
-                    }))
-                    .catch(err => message.channel.send(`Error in category check: ${err}`));
-
-            } else {
-                message.channel.send(`Error: Blue team was entered as ${blueTeam}`);
-                message.channel.send(`Red team was entered as ${redTeam}`);
-            }
+            await categoryCheck(division.category, options).then(
+                server.createChannel(newChannelName, options).then(async newChannel => {
+                    // newChannel.send(`${blueTeam} ${redTeam} ${strings.newChannelMessage}`);
+                    newChannel.send(newMessage);
+                }))
+                .catch(err => message.channel.send(`Error in category check: ${err}`));
         }
 
         // Prompt for and get match type (regualr season, playoffs, other)
@@ -119,17 +131,17 @@ class MakeMatchCommand extends Commando.Command {
         const matchTypeCollected = await matchTypeMessage.awaitReactions(optionFilter, reactionOptions);
         const matchType = consts.ReactionNumbers.indexOf(matchTypeCollected.first().emoji.name);
 
-        if(matchType === 1 || matchType === 2){
+        if(matchType === consts.MatchTypes.WEEKLY || matchType === consts.MatchTypes.PLAYOFFS){
             // Prompt for and get week number
             const weekMessage = await message.channel.send("What week or playoff round is it?");
             for (const weekNum of consts.NumOfWeeks) {
                 await weekMessage.react(consts.ReactionNumbers[weekNum]);
             }
             const weekNumCollected = await weekMessage.awaitReactions(optionFilter, reactionOptions);
-            if(matchType === 1) {
+            if(matchType === consts.MatchTypes.WEEKLY || matchType === consts.MatchTypes.BYE) {
                 prefixString = `week ${consts.ReactionNumbers.indexOf(weekNumCollected.first().emoji.name)}`;
             }
-            if(matchType === 2) {
+            if(matchType === consts.MatchTypes.PLAYOFFS) {
                 prefixString = consts.NumOfPlayoffs[consts.ReactionNumbers.indexOf(weekNumCollected.first().emoji.name)]
             }
         }
@@ -162,16 +174,24 @@ class MakeMatchCommand extends Commando.Command {
         const homeCollected = await homeTeamMessage.awaitReactions(optionFilter, reactionOptions);
         let blueTeamRole = Helper.getRole(server, teamMap[ homeCollected.first().emoji.name]);
 
+
         // Prompt for and get red team info
         const awayTeamMessage = await message.channel.send(`${strings.makeMatchWizard.whatAwayTeam}\n${teamOptions}`);
-        for(const [index, team] of Object.keys(division.teams).entries()){
+        for (const [index, team] of Object.keys(division.teams).entries()) {
             await awayTeamMessage.react(consts.ReactionNumbers[index + 1]);
         }
         const awayCollected = await awayTeamMessage.awaitReactions(optionFilter, reactionOptions);
         let redTeamRole = Helper.getRole(server, teamMap[awayCollected.first().emoji.name]);
 
-        //Finally, create the channel with all the info prompted for by the bot
-        createChannelWith(blueTeamRole, redTeamRole, division, prefixString, message.channel);
+        // Finally, create the channel with all the info prompted for by the bot
+        // If home team and away team are the same, it's a bye week
+        if(redTeamRole === blueTeamRole){
+            createByeWeekWith(blueTeamRole, division, prefixString, message.channel);
+        } else {
+            createMatchChannelWith(blueTeamRole, redTeamRole, division, prefixString, message.channel);
+        }
+
+
     }
 }
 
