@@ -99,12 +99,12 @@ class MakeMatchCommand extends Commando.Command {
                     deny: ['VIEW_CHANNEL'],
                 }
             ];
-            for (const teamId in teamIds) {
+            teamIds.forEach(teamId => {
                 permissionArray.push(             {
                     id: teamId,
                     allow: ['VIEW_CHANNEL'],
-                })
-            }
+                });
+            });
             if(commishBot) {permissionArray.push({id: commishBot.id, allow: ['VIEW_CHANNEL']})}
             if(pollBot) {permissionArray.push({id: pollBot.id, allow: ['VIEW_CHANNEL']})}
             if(divisionRefRole) {permissionArray.push({id: divisionRefRole.id, allow: ['VIEW_CHANNEL']})}
@@ -185,7 +185,7 @@ class MakeMatchCommand extends Commando.Command {
 
         // Finally, create the channel with all the info prompted for by the bot
         // If home team and away team are the same, it's a bye week
-        if(redTeamRole === blueTeamRole){
+        if(redTeamRole.id === blueTeamRole.id){
             createByeWeekWith(blueTeamRole, division, prefixString, message.channel);
         } else {
             createMatchChannelWith(blueTeamRole, redTeamRole, division, prefixString, message.channel);
