@@ -43,6 +43,7 @@ class MakeMatchCommand extends Commando.Command {
         const pollBot = Helper.getRole(server, 'Pollmaster');
         const modRole = Helper.getRole(server, settings.roles.mod);
         const restrictedRole = Helper.getRole(server, 'Restricted');
+        const captainRole = Helper.getRole(server, 'Captain');
         const reactionOptions = {max: 1, time: 25000, errors: ['time']};
         const optionFilter = (reaction, user) => {
             return consts.ReactionNumbers.some((hex) => reaction.emoji.name === hex) && user.id === message.author.id;
@@ -96,7 +97,7 @@ class MakeMatchCommand extends Commando.Command {
             let permissionArray = [
                 {
                     id: server.defaultRole.id,
-                    deny: ['VIEW_CHANNEL'],
+                    deny: ['VIEW_CHANNEL', 'SEND_MESSAGES'],
                 }
             ];
             teamIds.forEach(teamId => {
@@ -110,6 +111,7 @@ class MakeMatchCommand extends Commando.Command {
             if(divisionRefRole) {permissionArray.push({id: divisionRefRole.id, allow: ['VIEW_CHANNEL']})}
             if(modRole) {permissionArray.push({id: modRole.id, allow: ['VIEW_CHANNEL']})}
             if(restrictedRole) {permissionArray.push({id: restrictedRole.id, deny: ['SEND_MESSAGES']})}
+            if(captainRole) {permissionArray.push({id:captainRole.id, allow: ['SEND_MESSAGES']})}
 
             let options = {
                 type: 'text',
