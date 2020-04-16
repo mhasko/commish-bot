@@ -43,6 +43,7 @@ class MakeMatchCommand extends Commando.Command {
         const pollBot = Helper.getRole(server, 'Pollmaster');
         const modRole = Helper.getRole(server, settings.roles.mod);
         const restrictedRole = Helper.getRole(server, 'Restricted');
+        const captainRole = Helper.getRole(server, 'Captain');
         const reactionOptions = {max: 1, time: 25000, errors: ['time']};
         const optionFilter = (reaction, user) => {
             return consts.ReactionNumbers.some((hex) => reaction.emoji.name === hex) && user.id === message.author.id;
@@ -73,7 +74,7 @@ class MakeMatchCommand extends Commando.Command {
 
             let prefix = '';
             if(channelPrefix){prefix = `${channelPrefix}`;}
-            const newChannelName = `${prefix} -- BYE WEEK! -- ${team.name}`;
+            const newChannelName = `${consts.Emoji.CHECKMARK}${prefix} -- BYE WEEK! -- ${team.name}`;
             const newChannelMessage = `${team} ${strings.makeMatchWizard.newChannelMessageBye}`;
             await createChannel(newChannelName, newChannelMessage, [team.id], division, channel);
         }
@@ -86,7 +87,7 @@ class MakeMatchCommand extends Commando.Command {
 
             let prefix = '';
             if (channelPrefix) {prefix = `${channelPrefix}`;}
-            const newChannelName = `${prefix} ${blueTeam.name} vs ${redTeam.name}`;
+            const newChannelName = `${consts.Emoji.QUESTIONMARK}${prefix} ${blueTeam.name} vs ${redTeam.name}`;
             const newChannelMessage = `${blueTeam} ${redTeam} ${strings.makeMatchWizard.newChannelMessage}`;
             await createChannel(newChannelName, newChannelMessage, teamIds, division, channel);
         }
@@ -96,7 +97,7 @@ class MakeMatchCommand extends Commando.Command {
             let permissionArray = [
                 {
                     id: server.defaultRole.id,
-                    deny: ['VIEW_CHANNEL'],
+                    deny: ['VIEW_CHANNEL', 'SEND_MESSAGES'],
                 }
             ];
             teamIds.forEach(teamId => {
@@ -105,11 +106,12 @@ class MakeMatchCommand extends Commando.Command {
                     allow: ['VIEW_CHANNEL'],
                 });
             });
-            if(commishBot) {permissionArray.push({id: commishBot.id, allow: ['VIEW_CHANNEL']})}
-            if(pollBot) {permissionArray.push({id: pollBot.id, allow: ['VIEW_CHANNEL']})}
-            if(divisionRefRole) {permissionArray.push({id: divisionRefRole.id, allow: ['VIEW_CHANNEL']})}
-            if(modRole) {permissionArray.push({id: modRole.id, allow: ['VIEW_CHANNEL']})}
+            if(commishBot) {permissionArray.push({id: commishBot.id, allow: ['VIEW_CHANNEL', 'SEND_MESSAGES']})}
+            if(pollBot) {permissionArray.push({id: pollBot.id, allow: ['VIEW_CHANNEL', 'SEND_MESSAGES']})}
+            if(divisionRefRole) {permissionArray.push({id: divisionRefRole.id, allow: ['VIEW_CHANNEL', 'SEND_MESSAGES']})}
+            if(modRole) {permissionArray.push({id: modRole.id, allow: ['VIEW_CHANNEL', 'SEND_MESSAGES']})}
             if(restrictedRole) {permissionArray.push({id: restrictedRole.id, deny: ['SEND_MESSAGES']})}
+            if(captainRole) {permissionArray.push({id: captainRole.id, allow: ['SEND_MESSAGES']})}
 
             let options = {
                 type: 'text',
