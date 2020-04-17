@@ -1,9 +1,9 @@
 {
   "ionian": {
     "teams": {
-      "team99": {
-        "name": "team99",
-        "discordRole": "team99"
+      "Funky Ducks": {
+        "name": "Funky Ducks",
+        "discordRole": "Funky Ducks"
       },
       "team0": {
         "name": "team0",
@@ -45,9 +45,9 @@
         "name": "team21",
         "discordRole": "team21"
       },
-      "team9": {
-        "name": "team9",
-        "discordRole": "team9"
+      "Dream Daddies": {
+        "name": "Dream Daddies",
+        "discordRole": "Dream Daddies"
       },
       "team13": {
         "name": "team13",
@@ -77,9 +77,9 @@
   },
   "freljord": {
     "teams": {
-      "team2": {
-        "name": "team2",
-        "discordRole": "team2"
+      "Gniess Guys": {
+        "name": "Gniess Guys",
+        "discordRole": "Gniess Guys"
       },
       "Anarchy Amber": {
         "name": "Anarchy Amber",
@@ -89,9 +89,9 @@
         "name": "Stars United Esports Club",
         "discordRole": "Stars United Esports Club"
       },
-      "team11": {
-        "name": "team11",
-        "discordRole": "team11"
+      "Credible Holk (and Friends)": {
+        "name": "Credible Holk (and Friends)",
+        "discordRole": "Credible Holk (and Friends)"
       },
       "CEAL Team 6": {
         "name": "CEAL Team 6",
@@ -101,9 +101,9 @@
         "name": "team32",
         "discordRole": "team32"
       },
-      "team31": {
-        "name": "team31",
-        "discordRole": "team31"
+      "Flow Gaming": {
+        "name": "Flow Gaming",
+        "discordRole": "Flow Gaming"
       }
     },
     "category": "Freljord Division",
@@ -129,17 +129,17 @@
         "name": "Apes Together Strong",
         "discordRole": "Apes Together Strong"
       },
-      "team33": {
-        "name": "team33",
-        "discordRole": "team33"
+      "Kamikaze Penguins": {
+        "name": "Kamikaze Penguins",
+        "discordRole": "Kamikaze Penguins"
       },
       "eBROS": {
         "name": "eBROS",
         "discordRole": "eBROS"
       },
-      "team7": {
-        "name": "team7",
-        "discordRole": "team7"
+      "Team Spare Parts": {
+        "name": "Team Spare Parts",
+        "discordRole": "Team Spare Parts"
       },
       "team27": {
         "name": "team27",
@@ -157,9 +157,9 @@
         "name": "team3",
         "discordRole": "team3"
       },
-      "team24": {
-        "name": "team24",
-        "discordRole": "team24"
+      "Anarchy Purple": {
+        "name": "Anarchy Purple",
+        "discordRole": "Anarchy Purple"
       },
       "team1": {
         "name": "team1",

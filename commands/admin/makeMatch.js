@@ -103,7 +103,7 @@ class MakeMatchCommand extends Commando.Command {
             teamIds.forEach(teamId => {
                 permissionArray.push(             {
                     id: teamId,
-                    allow: ['VIEW_CHANNEL'],
+                    allow: ['VIEW_CHANNEL', 'SEND_MESSAGES'],
                 });
             });
             if(commishBot) {permissionArray.push({id: commishBot.id, allow: ['VIEW_CHANNEL', 'SEND_MESSAGES']})}
@@ -111,7 +111,7 @@ class MakeMatchCommand extends Commando.Command {
             if(divisionRefRole) {permissionArray.push({id: divisionRefRole.id, allow: ['VIEW_CHANNEL', 'SEND_MESSAGES']})}
             if(modRole) {permissionArray.push({id: modRole.id, allow: ['VIEW_CHANNEL', 'SEND_MESSAGES']})}
             if(restrictedRole) {permissionArray.push({id: restrictedRole.id, deny: ['SEND_MESSAGES']})}
-            if(captainRole) {permissionArray.push({id: captainRole.id, allow: ['SEND_MESSAGES']})}
+            // if(captainRole) {permissionArray.push({id: captainRole.id, allow: ['SEND_MESSAGES']})}
 
             let options = {
                 type: 'text',
