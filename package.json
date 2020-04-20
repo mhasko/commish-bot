@@ -3,7 +3,8 @@
   "version": "0.4.0",
   "private": true,
   "scripts": {
-    "start": "node commishbot.js"
+    "start": "node commishbot.js",
+    "forever": "forever start -o out.log -e err.log commishbot.js"
   },
   "dependencies": {
     "cookie-parser": "^1.4.5",
