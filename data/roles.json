@@ -5,9 +5,9 @@
         "name": "Funky Ducks",
         "discordRole": "Funky Ducks"
       },
-      "team0": {
-        "name": "team0",
-        "discordRole": "team0"
+      "Spacemen Spiff": {
+        "name": "Spacemen Spiff",
+        "discordRole": "Spacemen Spiff"
       },
       "Players Anonymous": {
         "name": "Players Anonymous",
@@ -41,33 +41,33 @@
         "name": "The Dandelion Knights",
         "discordRole": "The Dandelion Knights"
       },
-      "team21": {
-        "name": "team21",
-        "discordRole": "team21"
+      "Role Swapped": {
+        "name": "Role Swapped",
+        "discordRole": "Role Swapped"
       },
       "Dream Daddies": {
         "name": "Dream Daddies",
         "discordRole": "Dream Daddies"
       },
-      "team13": {
-        "name": "team13",
-        "discordRole": "team13"
+      "Vengeance E-Sports": {
+        "name": "Vengeance E-Sports",
+        "discordRole": "Vengeance E-Sports"
       },
       "Taco Taco's Taco Truck": {
         "name": "Taco Taco's Taco Truck",
         "discordRole": "Taco Taco's Taco Truck"
       },
-      "team30": {
-        "name": "team30",
-        "discordRole": "team30"
+      "Anarchy Navy": {
+        "name": "Anarchy Navy",
+        "discordRole": "Anarchy Navy"
       },
       "Team Billy": {
         "name": "Team Billy",
         "discordRole": "Team Billy"
       },
-      "team19": {
-        "name": "team19",
-        "discordRole": "team19"
+      "Ravenous Kumquats": {
+        "name": "Ravenous Kumquats",
+        "discordRole": "Ravenous Kumquats"
       }
     },
     "category": "Shuriman Division",
@@ -89,17 +89,17 @@
         "name": "Stars United Esports Club",
         "discordRole": "Stars United Esports Club"
       },
-      "Credible Holk (and Friends)": {
-        "name": "Credible Holk (and Friends)",
-        "discordRole": "Credible Holk (and Friends)"
+      "Credible Holk and Friends": {
+        "name": "Credible Holk and Friends",
+        "discordRole": "Credible Holk and Friends"
       },
       "CEAL Team 6": {
         "name": "CEAL Team 6",
         "discordRole": "CEAL Team 6"
       },
-      "team32": {
-        "name": "team32",
-        "discordRole": "team32"
+      "Dem Bois": {
+        "name": "Dem Bois",
+        "discordRole": "Dem Bois"
       },
       "Flow Gaming": {
         "name": "Flow Gaming",
@@ -121,9 +121,9 @@
         "name": "Clout 7",
         "discordRole": "Clout 7"
       },
-      "team14": {
-        "name": "team14",
-        "discordRole": "team14"
+      "Mundolicious": {
+        "name": "Mundolicious",
+        "discordRole": "Mundolicious"
       },
       "Apes Together Strong": {
         "name": "Apes Together Strong",
@@ -141,9 +141,9 @@
         "name": "Team Spare Parts",
         "discordRole": "Team Spare Parts"
       },
-      "team27": {
-        "name": "team27",
-        "discordRole": "team27"
+      "G Who": {
+        "name": "G Who",
+        "discordRole": "G Who"
       }
     },
     "category": "Noxian Division",
@@ -153,17 +153,17 @@
   },
   "demacian": {
     "teams": {
-      "team3": {
-        "name": "team3",
-        "discordRole": "team3"
+      "Unfinished Business": {
+        "name": "Unfinished Business",
+        "discordRole": "Unfinished Business"
       },
       "Anarchy Purple": {
         "name": "Anarchy Purple",
         "discordRole": "Anarchy Purple"
       },
-      "team1": {
-        "name": "team1",
-        "discordRole": "team1"
+      "Broken R Button": {
+        "name": "Broken R Button",
+        "discordRole": "Broken R Button"
       },
       "Sentinels": {
         "name": "Sentinels",
