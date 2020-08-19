@@ -1,33 +1,21 @@
 {
   "ionian": {
     "teams": {
-      "Funky Ducks": {
-        "name": "Funky Ducks",
-        "discordRole": "Funky Ducks"
-      },
-      "Spacemen Spiff": {
-        "name": "Spacemen Spiff",
-        "discordRole": "Spacemen Spiff"
-      },
-      "Players Anonymous": {
-        "name": "Players Anonymous",
-        "discordRole": "Players Anonymous"
-      },
-      "Cloud 10": {
-        "name": "Cloud 10",
-        "discordRole": "Cloud 10"
-      },
-      "team20": {
-        "name": "team20",
-        "discordRole": "team20"
+      "Taco Taco's Taco Truck": {
+        "name": "Taco Taco's Taco Truck",
+        "discordRole": "Taco Taco's Taco Truck"
       },
       "Team Tempest": {
         "name": "Team Tempest",
         "discordRole": "Team Tempest"
       },
-      "Helix": {
-        "name": "Helix",
-        "discordRole": "Helix"
+      "Team Harmony": {
+        "name": "Team Harmony",
+        "discordRole": "Team Harmony"
+      },
+      "Ionian Team 2": {
+        "name": "Ionian Team 2",
+        "discordRole": "Ionian Team 2ca"
       }
     },
     "category": "Ionian Division",
@@ -41,33 +29,29 @@
         "name": "The Dandelion Knights",
         "discordRole": "The Dandelion Knights"
       },
-      "Role Swapped": {
-        "name": "Role Swapped",
-        "discordRole": "Role Swapped"
-      },
-      "Dream Daddies": {
-        "name": "Dream Daddies",
-        "discordRole": "Dream Daddies"
-      },
-      "Vengeance E-Sports": {
-        "name": "Vengeance E-Sports",
-        "discordRole": "Vengeance E-Sports"
-      },
-      "Taco Taco's Taco Truck": {
-        "name": "Taco Taco's Taco Truck",
-        "discordRole": "Taco Taco's Taco Truck"
-      },
-      "Anarchy Navy": {
-        "name": "Anarchy Navy",
-        "discordRole": "Anarchy Navy"
-      },
       "Team Billy": {
         "name": "Team Billy",
         "discordRole": "Team Billy"
       },
-      "Ravenous Kumquats": {
-        "name": "Ravenous Kumquats",
-        "discordRole": "Ravenous Kumquats"
+      "Team 21": {
+        "name": "Team 21",
+        "discordRole": "Team 21"
+      },
+      "Players Reborn": {
+        "name": "Players Reborn",
+        "discordRole": "Players Reborn"
+      },
+      "Cloud 10": {
+        "name": "Cloud 10",
+        "discordRole": "Cloud 10"
+      },
+      "The Squirtle Squad": {
+        "name": "The Squirtle Squad",
+        "discordRole": "The Squirtle Squad"
+      },
+      "The Silverbacks": {
+        "name": "The Silverbacks",
+        "discordRole": "The Silverbacks"
       }
     },
     "category": "Shuriman Division",
@@ -77,33 +61,33 @@
   },
   "freljord": {
     "teams": {
-      "Gniess Guys": {
-        "name": "Gniess Guys",
-        "discordRole": "Gniess Guys"
+      "Blood Oath Kings": {
+        "name": "Blood Oath Kings",
+        "discordRole": "Blood Oath Kings"
       },
-      "Anarchy Amber": {
-        "name": "Anarchy Amber",
-        "discordRole": "Anarchy Amber"
+      "Schist Storm": {
+        "name": "Schist Storm",
+        "discordRole": "Schist Storm"
       },
-      "Stars United Esports Club": {
-        "name": "Stars United Esports Club",
-        "discordRole": "Stars United Esports Club"
+      "Team 25": {
+        "name": "Team 25",
+        "discordRole": "Team 25"
       },
-      "Credible Holk and Friends": {
-        "name": "Credible Holk and Friends",
-        "discordRole": "Credible Holk and Friends"
+      "Prophecy": {
+        "name": "Prophecy",
+        "discordRole": "Prophecy"
       },
-      "CEAL Team 6": {
-        "name": "CEAL Team 6",
-        "discordRole": "CEAL Team 6"
+      "This Team": {
+        "name": "This Team",
+        "discordRole": "This Team"
       },
-      "Dem Bois": {
-        "name": "Dem Bois",
-        "discordRole": "Dem Bois"
+      "Dream Daddies": {
+        "name": "Dream Daddies",
+        "discordRole": "Dream Daddies"
       },
-      "Flow Gaming": {
-        "name": "Flow Gaming",
-        "discordRole": "Flow Gaming"
+      "Chicken Ryders": {
+        "name": "Chicken Ryders",
+        "discordRole": "Chicken Ryders"
       }
     },
     "category": "Freljord Division",
@@ -113,66 +97,38 @@
   },
   "noxian": {
     "teams": {
-      "Men's Women's Torment": {
-        "name": "Men's Women's Torment",
-        "discordRole": "Men's Women's Torment"
-      },
-      "Clout 7": {
-        "name": "Clout 7",
-        "discordRole": "Clout 7"
-      },
-      "Mundolicious": {
-        "name": "Mundolicious",
-        "discordRole": "Mundolicious"
+      "Team 6": {
+        "name": "Team 6",
+        "discordRole": "Team 6"
       },
       "Apes Together Strong": {
         "name": "Apes Together Strong",
         "discordRole": "Apes Together Strong"
       },
-      "Kamikaze Penguins": {
-        "name": "Kamikaze Penguins",
-        "discordRole": "Kamikaze Penguins"
+      "Nekoma": {
+        "name": "Nekoma",
+        "discordRole": "Nekoma"
+      },
+      "Imagine eSports": {
+        "name": "Imagine eSports",
+        "discordRole": "Imagine eSports"
       },
       "eBROS": {
         "name": "eBROS",
         "discordRole": "eBROS"
       },
-      "Team Spare Parts": {
-        "name": "Team Spare Parts",
-        "discordRole": "Team Spare Parts"
+      "Gold Salamanders": {
+        "name": "Gold Salamanders",
+        "discordRole": "Gold Salamanders"
       },
-      "G Who": {
-        "name": "G Who",
-        "discordRole": "G Who"
+      "Bronze X Penguins": {
+        "name": "Bronze X Penguins",
+        "discordRole": "Bronze X Penguins"
       }
     },
     "category": "Noxian Division",
     "divisionRole": "noxian ref",
     "tribunal": ["TheAmo"],
     "mods": ["C7 Goiner"]
-  },
-  "demacian": {
-    "teams": {
-      "Unfinished Business": {
-        "name": "Unfinished Business",
-        "discordRole": "Unfinished Business"
-      },
-      "Anarchy Purple": {
-        "name": "Anarchy Purple",
-        "discordRole": "Anarchy Purple"
-      },
-      "Broken R Button": {
-        "name": "Broken R Button",
-        "discordRole": "Broken R Button"
-      },
-      "Sentinels": {
-        "name": "Sentinels",
-        "discordRole": "Sentinels"
-      }
-    },
-    "category": "Demacian Division",
-    "divisionRole": "demacian ref",
-    "tribunal": ["King Majora"],
-    "mods": ["The Cpt Goose", "S01 Reaver"]
   }
 }
