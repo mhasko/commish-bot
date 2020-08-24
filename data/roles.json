@@ -13,9 +13,9 @@
         "name": "Team Harmony",
         "discordRole": "Team Harmony"
       },
-      "Ionian Team 2": {
-        "name": "Ionian Team 2",
-        "discordRole": "Ionian Team 2ca"
+      "Hangin' With Friends": {
+        "name": "Hangin' With Friends",
+        "discordRole": "Hangin' With Friends"
       }
     },
     "category": "Ionian Division",
@@ -33,9 +33,9 @@
         "name": "Team Billy",
         "discordRole": "Team Billy"
       },
-      "Team 21": {
-        "name": "Team 21",
-        "discordRole": "Team 21"
+      "[Team Name Here]": {
+        "name": "[Team Name Here]",
+        "discordRole": "[Team Name Here]"
       },
       "Players Reborn": {
         "name": "Players Reborn",

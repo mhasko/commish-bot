@@ -1,5 +1,5 @@
 {
-  "pollMessage": "@everyone Please cast your vote for what times you are able to play.  This poll will close in 48 hours, and if the teams have not come to a mutual decision on their match time, then which ever time slot polls highest will be the enforced match time. Teams will need obtain subs for any missing member.",
+  "pollMessage": "@everyone Please vote on each date and time that you (as an individual) are able to play this series. This poll will close in 48 hours, and if the teams have not come to a mutual decision on their match time, then which ever time slot polls highest will be the enforced match time. Teams will need obtain subs for any missing member. Any attempts to manipulate the poll by voting dishonestly will subject that team to a potential competitive ruling. Thank you!",
   "makeMatchWizard": {
     "whatType": "What type of match is this?\n:one:: Regular Season\n:two:: Playoffs\n:three:: Other",
     "whatDivision": "What division are you making this channel for?",
