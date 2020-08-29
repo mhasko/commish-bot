@@ -97,9 +97,9 @@
   },
   "noxian": {
     "teams": {
-      "Team 6": {
-        "name": "Team 6",
-        "discordRole": "Team 6"
+      "Ace's Angels": {
+        "name": "Ace's Angels",
+        "discordRole": "Ace's Angels"
       },
       "Apes Together Strong": {
         "name": "Apes Together Strong",
@@ -120,6 +120,10 @@
       "Gold Salamanders": {
         "name": "Gold Salamanders",
         "discordRole": "Gold Salamanders"
+      },
+      "OwlBear Express": {
+        "name": "OwlBear Express",
+        "discordRole": "OwlBear Express"
       },
       "Bronze X Penguins": {
         "name": "Bronze X Penguins",
