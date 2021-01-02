@@ -38,17 +38,17 @@ class MakePollCommandCommand extends Commando.Command {
         let optionsString = "";
 
         //Brute forcing this string right now since weekend have afternoon options.
-        optionsString += `Wed ${refDate.getUTCMonth() + 1}/${refDate.getUTCDate()}`;
+        optionsString += `Wed ${refDate.getUTCMonth() + 1}/${refDate.getUTCDate()},`;
         refDate.setDate(refDate.getDate() + 1);
-        optionsString += `Thur ${refDate.getUTCMonth() + 1}/${refDate.getUTCDate()}`;
+        optionsString += `Thur ${refDate.getUTCMonth() + 1}/${refDate.getUTCDate()},`;
         refDate.setDate(refDate.getDate() + 1);
-        optionsString += `Fri ${refDate.getUTCMonth() + 1}/${refDate.getUTCDate()}`;
+        optionsString += `Fri ${refDate.getUTCMonth() + 1}/${refDate.getUTCDate()},`;
         refDate.setDate(refDate.getDate() + 1);
-        optionsString += `Sat ${refDate.getUTCMonth() + 1}/${refDate.getUTCDate()}`;
+        optionsString += `Sat ${refDate.getUTCMonth() + 1}/${refDate.getUTCDate()},`;
         refDate.setDate(refDate.getDate() + 1);
-        optionsString += `Sun ${refDate.getUTCMonth() + 1}/${refDate.getUTCDate()}`;
+        optionsString += `Sun ${refDate.getUTCMonth() + 1}/${refDate.getUTCDate()},`;
         refDate.setDate(refDate.getDate() + 1);
-        optionsString += `Mon ${refDate.getUTCMonth() + 1}/${refDate.getUTCDate()}`;
+        optionsString += `Mon ${refDate.getUTCMonth() + 1}/${refDate.getUTCDate()},`;
         refDate.setDate(refDate.getDate() + 1);
         optionsString += `Tue ${refDate.getUTCMonth() + 1}/${refDate.getUTCDate()}`;
         refDate.setDate(refDate.getDate() + 1);
