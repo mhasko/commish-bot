@@ -38,21 +38,19 @@ class MakePollCommandCommand extends Commando.Command {
         let optionsString = "";
 
         //Brute forcing this string right now since weekend have afternoon options.
-        optionsString += `Wed ${refDate.getUTCMonth() + 1}/${refDate.getUTCDate()} 9p EST,`;
+        optionsString += `Wed ${refDate.getUTCMonth() + 1}/${refDate.getUTCDate()}`;
         refDate.setDate(refDate.getDate() + 1);
-        optionsString += `Thur ${refDate.getUTCMonth() + 1}/${refDate.getUTCDate()} 9p EST,`;
+        optionsString += `Thur ${refDate.getUTCMonth() + 1}/${refDate.getUTCDate()}`;
         refDate.setDate(refDate.getDate() + 1);
-        optionsString += `Fri ${refDate.getUTCMonth() + 1}/${refDate.getUTCDate()} 9p EST,`;
+        optionsString += `Fri ${refDate.getUTCMonth() + 1}/${refDate.getUTCDate()}`;
         refDate.setDate(refDate.getDate() + 1);
-        optionsString += `Sat ${refDate.getUTCMonth() + 1}/${refDate.getUTCDate()} 2p EST,`;
-        optionsString += `Sat ${refDate.getUTCMonth() + 1}/${refDate.getUTCDate()} 9p EST,`;
+        optionsString += `Sat ${refDate.getUTCMonth() + 1}/${refDate.getUTCDate()}`;
         refDate.setDate(refDate.getDate() + 1);
-        optionsString += `Sun ${refDate.getUTCMonth() + 1}/${refDate.getUTCDate()} 2p EST,`;
-        optionsString += `Sun ${refDate.getUTCMonth() + 1}/${refDate.getUTCDate()} 9p EST,`;
+        optionsString += `Sun ${refDate.getUTCMonth() + 1}/${refDate.getUTCDate()}`;
         refDate.setDate(refDate.getDate() + 1);
-        optionsString += `Mon ${refDate.getUTCMonth() + 1}/${refDate.getUTCDate()} 9p EST,`;
+        optionsString += `Mon ${refDate.getUTCMonth() + 1}/${refDate.getUTCDate()}`;
         refDate.setDate(refDate.getDate() + 1);
-        optionsString += `Tue ${refDate.getUTCMonth() + 1}/${refDate.getUTCDate()} 9p EST`;
+        optionsString += `Tue ${refDate.getUTCMonth() + 1}/${refDate.getUTCDate()}`;
         refDate.setDate(refDate.getDate() + 1);
 
         message.channel.send(`pm!cmd -q "${strings.pollMessage}" -o "${optionsString}" -mc 0 -d "in 48 hours"`)
