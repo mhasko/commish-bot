@@ -1,138 +1,190 @@
 {
   "ionian": {
     "teams": {
-      "Ambiguous Alligators": {
-        "name": "Ambiguous Alligators",
-        "discordRole": "Ambiguous Alligators"
-      },
-      "Team Tempest": {
-        "name": "Team Tempest",
-        "discordRole": "Team Tempest"
-      },
-      "Team Harmony": {
-        "name": "Team Harmony",
-        "discordRole": "Team Harmony"
-      },
-      "Hangin' With Friends": {
-        "name": "Hangin' With Friends",
-        "discordRole": "Hangin' With Friends"
-      }
-    },
-    "category": "Ionian Division",
-    "divisionRole": "ionian ref",
-    "tribunal": ["Karen Franz"],
-    "mods": ["Styxnkrons"]
-  },
-  "shuriman": {
-    "teams": {
-      "The Dandelion Knights": {
-        "name": "The Dandelion Knights",
-        "discordRole": "The Dandelion Knights"
-      },
-      "Team Billy": {
-        "name": "Team Billy",
-        "discordRole": "Team Billy"
-      },
-      "[Team Name Here]": {
-        "name": "[Team Name Here]",
-        "discordRole": "[Team Name Here]"
-      },
       "Players Reborn": {
         "name": "Players Reborn",
         "discordRole": "Players Reborn"
       },
+      "Team2": {
+        "name": "Team2",
+        "discordRole": "I2"
+      },
+      "Team6": {
+        "name": "Team6",
+        "discordRole": "I3"
+      },
+      "Team12": {
+        "name": "Team12",
+        "discordRole": "I4"
+      },
+      "Team16": {
+        "name": "Team16",
+        "discordRole": "I5"
+      },
+      "MouthfeeL": {
+        "name": "MouthfeeL",
+        "discordRole": "MouthfeeL"
+      }
+    },
+    "category": "Ionian Division",
+    "divisionRole": "ionian liaison"
+  },
+  "shuriman": {
+    "teams": {
       "Cloud 10": {
         "name": "Cloud 10",
         "discordRole": "Cloud 10"
       },
-      "The Squirtle Squad": {
-        "name": "The Squirtle Squad",
-        "discordRole": "The Squirtle Squad"
+      "Team3": {
+        "name": "Team3",
+        "discordRole": "S2"
       },
-      "The Silverbacks": {
-        "name": "The Silverbacks",
-        "discordRole": "The Silverbacks"
+      "Africa Donkeys": {
+        "name": "Africa Donkeys",
+        "discordRole": "Africa Donkeys"
+      },
+      "Team37": {
+        "name": "Team37",
+        "discordRole": "S4"
+      },
+      "Team20": {
+        "name": "Team20",
+        "discordRole": "S5"
+      },
+      "Anarchy Blue": {
+        "name": "Anarchy Blue",
+        "discordRole": "Anarchy Blue"
       }
     },
     "category": "Shuriman Division",
-    "divisionRole": "shuriman ref",
-    "tribunal": ["Foozlebamboozle"],
-    "mods": ["DeltaTerra"]
+    "divisionRole": "shuriman liaison"
   },
   "freljord": {
     "teams": {
-      "Blood Oath Kings": {
-        "name": "Blood Oath Kings",
-        "discordRole": "Blood Oath Kings"
+      "Team22": {
+        "name": "Team22",
+        "discordRole": "F1"
       },
-      "Schist Storm": {
-        "name": "Schist Storm",
-        "discordRole": "Schist Storm"
+      "Kamikaze Penguins": {
+        "name": "Kamikaze Penguins",
+        "discordRole": "Kamikaze Penguins"
       },
-      "Team 25": {
-        "name": "Team 25",
-        "discordRole": "Team 25"
+      "NEX Esports": {
+        "name": "NEX Esports",
+        "discordRole": "NEX Esports"
       },
-      "Prophecy": {
-        "name": "Prophecy",
-        "discordRole": "Prophecy"
+      "Team29": {
+        "name": "Team29",
+        "discordRole": "F4"
       },
-      "This Team": {
-        "name": "This Team",
-        "discordRole": "This Team"
+      "Imagine Cloud": {
+        "name": "Imagine Cloud",
+        "discordRole": "Imagine Cloud"
       },
-      "Dream Daddies": {
-        "name": "Dream Daddies",
-        "discordRole": "Dream Daddies"
+      "Zero Logic Gaming": {
+        "name": "Zero Logic Gaming",
+        "discordRole": "Zero Logic Gaming"
       },
-      "Chicken Ryders": {
-        "name": "Chicken Ryders",
-        "discordRole": "Chicken Ryders"
+      "Team38": {
+        "name": "Team38",
+        "discordRole": "F7"
       }
     },
     "category": "Freljord Division",
-    "divisionRole": "freljord ref",
-    "tribunal": ["TheAMO"],
-    "mods": ["ajtl33", "Brandon \"aileronroll\""]
+    "divisionRole": "freljord liaison"
   },
-  "noxian": {
+  "piltover": {
     "teams": {
-      "Ace's Angels": {
-        "name": "Ace's Angels",
-        "discordRole": "Ace's Angels"
+      "Team 5": {
+        "name": "Team 5",
+        "discordRole": "Team 5"
+      },
+      "Team 9": {
+        "name": "Team 9",
+        "discordRole": "Team 9"
       },
       "Apes Together Strong": {
         "name": "Apes Together Strong",
         "discordRole": "Apes Together Strong"
       },
-      "Nekoma": {
-        "name": "Nekoma",
-        "discordRole": "Nekoma"
+      "Ghostcock Actual": {
+        "name": "Ghostcock Actual",
+        "discordRole": "Ghostcock Actual"
       },
-      "Imagine eSports": {
-        "name": "Imagine eSports",
-        "discordRole": "Imagine eSports"
+      "Team21": {
+        "name": "Team21",
+        "discordRole": "Team21"
       },
-      "eBROS": {
-        "name": "eBROS",
-        "discordRole": "eBROS"
+      "Stars United Esports Club": {
+        "name": "Stars United Esports Club",
+        "discordRole": "Stars United Esports Club"
       },
-      "Gold Salamanders": {
-        "name": "Gold Salamanders",
-        "discordRole": "Gold Salamanders"
+      "Team28": {
+        "name": "Team28",
+        "discordRole": "Team28"
+      }
+    },
+    "category": "Piltover Division",
+    "divisionRole": "piltover liaison"
+  },
+  "noxian": {
+    "teams": {
+      "Team4": {
+        "name": "Team4",
+        "discordRole": "N1"
       },
-      "OwlBear Express": {
-        "name": "OwlBear Express",
-        "discordRole": "OwlBear Express"
+      "The Dandelion Knights": {
+        "name": "The Dandelion Knights",
+        "discordRole": "The Dandelion Knights"
       },
-      "Bronze X Penguins": {
-        "name": "Bronze X Penguins",
-        "discordRole": "Bronze X Penguins"
+      "Team14": {
+        "name": "Team14",
+        "discordRole": "N3"
+      },
+      "Chicken Ryders": {
+        "name": "Chicken Ryders",
+        "discordRole": "Chicken Ryders"
+      },
+      "Imagine Ocean": {
+        "name": "Imagine Ocean",
+        "discordRole": "Imagine Ocean"
+      },
+      "Team27": {
+        "name": "Team27",
+        "discordRole": "Team27"
+      },
+      "Team30": {
+        "name": "Team30",
+        "discordRole": "N7"
       }
     },
     "category": "Noxian Division",
-    "divisionRole": "noxian ref",
-    "tribunal": ["TheAmo"],
-    "mods": ["C7 Goiner"]
+    "divisionRole": "noxian liaison"
+  },
+  "demacia": {
+    "teams": {
+      "Shadow Rift Gaming": {
+        "name": "Shadow Rift Gaming",
+        "discordRole": "Shadow Rift Gaming"
+      },
+      "Team19": {
+        "name": "Team19",
+        "discordRole": "D2"
+      },
+      "Team31": {
+        "name": "Team31",
+        "discordRole": "D3"
+      },
+      "Team34": {
+        "name": "Team34",
+        "discordRole": "D4"
+      },
+      "Team36": {
+        "name": "Team36",
+        "discordRole": "D5"
+      }
+    },
+    "category": "Demacia Division",
+    "divisionRole": "demacian liaison"
   }
 }
