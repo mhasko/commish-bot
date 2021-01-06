@@ -10,8 +10,9 @@ const Divisions = {
     "\u0031\u20E3": 'ionian',
     "\u0032\u20E3": 'shuriman',
     "\u0033\u20E3": 'freljord',
-    "\u0034\u20E3": 'noxian',
-    "\u0035\u20E3": 'demacian'
+    "\u0034\u20E3": 'piltover',
+    "\u0035\u20E3": 'noxian',
+    "\u0036\u20E3": 'demacian'
 };
 
 const Emoji = {

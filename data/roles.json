@@ -9,17 +9,17 @@
         "name": "Team2",
         "discordRole": "I2"
       },
-      "Team6": {
-        "name": "Team6",
-        "discordRole": "I3"
+      "Team Harmony": {
+        "name": "Team Harmony",
+        "discordRole": "Team Harmony"
       },
       "Team12": {
         "name": "Team12",
         "discordRole": "I4"
       },
-      "Team16": {
-        "name": "Team16",
-        "discordRole": "I5"
+      "The Silverbacks": {
+        "name": "The Silverbacks",
+        "discordRole": "The Silverbacks"
       },
       "MouthfeeL": {
         "name": "MouthfeeL",
@@ -35,9 +35,9 @@
         "name": "Cloud 10",
         "discordRole": "Cloud 10"
       },
-      "Team3": {
-        "name": "Team3",
-        "discordRole": "S2"
+      "Team Harmony Godan": {
+        "name": "Team Harmony Godan",
+        "discordRole": "Team Harmony Godan"
       },
       "Africa Donkeys": {
         "name": "Africa Donkeys",
@@ -61,9 +61,9 @@
   },
   "freljord": {
     "teams": {
-      "Team22": {
-        "name": "Team22",
-        "discordRole": "F1"
+      "Team Harmony Kudan": {
+        "name": "Team Harmony Kudan",
+        "discordRole": "Team Harmony Kudan"
       },
       "Kamikaze Penguins": {
         "name": "Kamikaze Penguins",
@@ -95,9 +95,9 @@
   },
   "piltover": {
     "teams": {
-      "Team 5": {
-        "name": "Team 5",
-        "discordRole": "Team 5"
+      "Raven Esports": {
+        "name": "Raven Esports",
+        "discordRole": "Raven Esports"
       },
       "Team 9": {
         "name": "Team 9",
@@ -119,9 +119,9 @@
         "name": "Stars United Esports Club",
         "discordRole": "Stars United Esports Club"
       },
-      "Team28": {
-        "name": "Team28",
-        "discordRole": "Team28"
+      "Hentai With Senpai": {
+        "name": "Hentai With Senpai",
+        "discordRole": "Hentai With Senpai"
       }
     },
     "category": "Piltover Division",
