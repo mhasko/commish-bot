@@ -111,9 +111,9 @@
         "name": "Ghostcock Actual",
         "discordRole": "Ghostcock Actual"
       },
-      "Team21": {
-        "name": "Team21",
-        "discordRole": "Team21"
+      "Reformed Oath Kings": {
+        "name": "Reformed Oath Kings",
+        "discordRole": "Reformed Oath Kings"
       },
       "Stars United Esports Club": {
         "name": "Stars United Esports Club",
@@ -129,9 +129,9 @@
   },
   "noxian": {
     "teams": {
-      "Team4": {
-        "name": "Team4",
-        "discordRole": "N1"
+      "GoonSquad": {
+        "name": "GoonSquad",
+        "discordRole": "GoonSquad"
       },
       "The Dandelion Knights": {
         "name": "The Dandelion Knights",
@@ -151,11 +151,11 @@
       },
       "Team27": {
         "name": "Team27",
-        "discordRole": "Team27"
+        "discordRole": "N6"
       },
-      "Team30": {
-        "name": "Team30",
-        "discordRole": "N7"
+      "Guardian Gaming": {
+        "name": "Guardian Gaming",
+        "discordRole": "Guardian Gaming"
       }
     },
     "category": "Noxian Division",
