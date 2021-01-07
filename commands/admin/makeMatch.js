@@ -187,13 +187,15 @@ class MakeMatchCommand extends Commando.Command {
 
         // Finally, create the channel with all the info prompted for by the bot
         // If home team and away team are the same, it's a bye week
-        if(redTeamRole.id === blueTeamRole.id){
-            createByeWeekWith(blueTeamRole, division, prefixString, message.channel);
+        if(!redTeamRole || !blueTeamRole) {
+            message.channel.send(`One or both team roles aren't present:\nBlueRule is ${blueTeamRole}\nRedRule is ${redTeamRole}`);
         } else {
-            createMatchChannelWith(blueTeamRole, redTeamRole, division, prefixString, message.channel);
+            if(redTeamRole.id === blueTeamRole.id) {
+                createByeWeekWith(blueTeamRole, division, prefixString, message.channel);
+            } else {
+                createMatchChannelWith(blueTeamRole, redTeamRole, division, prefixString, message.channel);
+            }
         }
-
-
     }
 }
 
