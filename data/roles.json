@@ -73,9 +73,9 @@
         "name": "NEX Esports",
         "discordRole": "NEX Esports"
       },
-      "Team29": {
-        "name": "Team29",
-        "discordRole": "F4"
+      "Elf Army Gaming": {
+        "name": "Elf Army Gaming",
+        "discordRole": "Elf Army Gaming"
       },
       "Imagine Cloud": {
         "name": "Imagine Cloud",
@@ -85,8 +85,8 @@
         "name": "Zero Logic Gaming",
         "discordRole": "Zero Logic Gaming"
       },
-      "Team38": {
-        "name": "Team38",
+      "F7": {
+        "name": "F7",
         "discordRole": "F7"
       }
     },
@@ -119,9 +119,9 @@
         "name": "Stars United Esports Club",
         "discordRole": "Stars United Esports Club"
       },
-      "Hentai With Senpai": {
-        "name": "Hentai With Senpai",
-        "discordRole": "Hentai With Senpai"
+      "[Redacted]": {
+        "name": "[Redacted]",
+        "discordRole": "[Redacted]"
       }
     },
     "category": "Piltover Division",
@@ -137,9 +137,9 @@
         "name": "The Dandelion Knights",
         "discordRole": "The Dandelion Knights"
       },
-      "Team14": {
-        "name": "Team14",
-        "discordRole": "N3"
+      "Team Harmony Judan Division": {
+        "name": "Team Harmony Judan Division",
+        "discordRole": "Team Harmony Judan Division"
       },
       "Chicken Ryders": {
         "name": "Chicken Ryders",
@@ -167,21 +167,21 @@
         "name": "Shadow Rift Gaming",
         "discordRole": "Shadow Rift Gaming"
       },
-      "Team19": {
-        "name": "Team19",
-        "discordRole": "D2"
+      "Tactical Inting": {
+        "name": "Tactical Inting",
+        "discordRole": "Tactical Inting"
       },
-      "Team31": {
-        "name": "Team31",
-        "discordRole": "D3"
+      "KG Baron Not Included": {
+        "name": "KG Baron Not Included",
+        "discordRole": "KG Baron Not Included"
       },
-      "Team34": {
-        "name": "Team34",
-        "discordRole": "D4"
+      "Team Defiant": {
+        "name": "Team Defiant",
+        "discordRole": "Team Defiant"
       },
-      "Team36": {
-        "name": "Team36",
-        "discordRole": "D5"
+      "Stormriders": {
+        "name": "Stormriders",
+        "discordRole": "Stormriders"
       }
     },
     "category": "Demacia Division",
