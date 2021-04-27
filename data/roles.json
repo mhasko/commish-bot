@@ -1,188 +1,174 @@
 {
   "ionian": {
     "teams": {
-      "Players Reborn": {
-        "name": "Players Reborn",
-        "discordRole": "Players Reborn"
+      "I 1": {
+        "name": "I 1",
+        "discordRole": "I 1"
       },
-      "Imagine Mountain": {
-        "name": "Imagine Mountain",
-        "discordRole": "Imagine Mountain"
+      "I 2": {
+        "name": "I 2",
+        "discordRole": "I 2"
       },
-      "Team Harmony": {
-        "name": "Team Harmony",
-        "discordRole": "Team Harmony"
+      "I 3": {
+        "name": "I 3",
+        "discordRole": "I 3"
       },
-      "Elder Dragon": {
-        "name": "Elder Dragon",
-        "discordRole": "Elder Dragon"
+      "I 4": {
+        "name": "I 4",
+        "discordRole": "I 4"
       },
-      "The Silverbacks": {
-        "name": "The Silverbacks",
-        "discordRole": "The Silverbacks"
+      "I 5": {
+        "name": "I 5",
+        "discordRole": "I 5"
       },
-      "MouthfeeL": {
-        "name": "MouthfeeL",
-        "discordRole": "MouthfeeL"
+      "I 6": {
+        "name": "I 6",
+        "discordRole": "I 6"
       }
     },
     "category": "Ionian Division",
     "divisionRole": "ionian liaison"
   },
   "shuriman": {
-    "teams": {
-      "Cloud 10": {
-        "name": "Cloud 10",
-        "discordRole": "Cloud 10"
+    "team": {
+      "S 1": {
+        "name": "S 1",
+        "discordRole": "S 1"
       },
-      "Team Harmony Godan": {
-        "name": "Team Harmony Godan",
-        "discordRole": "Team Harmony Godan"
+      "S 2": {
+        "name": "S 2",
+        "discordRole": "S 2"
       },
-      "Africa Donkeys": {
-        "name": "Africa Donkeys",
-        "discordRole": "Africa Donkeys"
+      "S 3": {
+        "name": "S 3",
+        "discordRole": "S 3"
       },
-      "Team37": {
-        "name": "Team37",
-        "discordRole": "S4"
+      "S 4": {
+        "name": "S 4",
+        "discordRole": "S 4"
       },
-      "Hydrodynamic Boing-Boings": {
-        "name": "Hydrodynamic Boing-Boings",
-        "discordRole": "Hydrodynamic Boing-Boings"
+      "S 5": {
+        "name": "S 5",
+        "discordRole": "S 5"
       },
-      "Anarchy Blue": {
-        "name": "Anarchy Blue",
-        "discordRole": "Anarchy Blue"
+      "S 6": {
+        "name": "S 6",
+        "discordRole": "S 6"
       }
     },
     "category": "Shuriman Division",
     "divisionRole": "shuriman liaison"
   },
   "freljord": {
-    "teams": {
-      "Team Harmony Kudan": {
-        "name": "Team Harmony Kudan",
-        "discordRole": "Team Harmony Kudan"
+    "team": {
+      "F 1": {
+        "name": "F 1",
+        "discordRole": "F 1"
       },
-      "Kamikaze Penguins": {
-        "name": "Kamikaze Penguins",
-        "discordRole": "Kamikaze Penguins"
+      "F 2": {
+        "name": "F 2",
+        "discordRole": "F 2"
       },
-      "NEX Esports": {
-        "name": "NEX Esports",
-        "discordRole": "NEX Esports"
+      "F 3": {
+        "name": "F 3",
+        "discordRole": "F 3"
       },
-      "Elf Army Gaming": {
-        "name": "Elf Army Gaming",
-        "discordRole": "Elf Army Gaming"
+      "F 4": {
+        "name": "F 4",
+        "discordRole": "F 4"
       },
-      "Imagine Cloud": {
-        "name": "Imagine Cloud",
-        "discordRole": "Imagine Cloud"
+      "F 5": {
+        "name": "F 5",
+        "discordRole": "F 5"
       },
-      "Zero Logic Gaming": {
-        "name": "Zero Logic Gaming",
-        "discordRole": "Zero Logic Gaming"
-      },
-      "Pandemic Pappis": {
-        "name": "Pandemic Pappis",
-        "discordRole": "Pandemic Pappis"
+      "F 6": {
+        "name": "F 6",
+        "discordRole": "F 6"
       }
     },
     "category": "Freljord Division",
     "divisionRole": "freljord liaison"
   },
   "piltover": {
-    "teams": {
-      "Raven Esports": {
-        "name": "Raven Esports",
-        "discordRole": "Raven Esports"
-      },
-      "InkJet420": {
-        "name": "InkJet420",
-        "discordRole": "InkJet420"
-      },
-      "Apes Together Strong": {
-        "name": "Apes Together Strong",
-        "discordRole": "Apes Together Strong"
-      },
-      "Ghostcock Actual": {
-        "name": "Ghostcock Actual",
-        "discordRole": "Ghostcock Actual"
-      },
-      "Reformed Oath Kings": {
-        "name": "Reformed Oath Kings",
-        "discordRole": "Reformed Oath Kings"
-      },
-      "Stars United Esports Club": {
-        "name": "Stars United Esports Club",
-        "discordRole": "Stars United Esports Club"
-      },
-      "[Redacted]": {
-        "name": "[Redacted]",
-        "discordRole": "[Redacted]"
-      }
+    "P 1": {
+      "name": "P 1",
+      "discordRole": "P 1"
+    },
+    "P 2": {
+      "name": "P 2",
+      "discordRole": "P 2"
+    },
+    "P 3": {
+      "name": "P 3",
+      "discordRole": "P 3"
+    },
+    "P 4": {
+      "name": "P 4",
+      "discordRole": "P 4"
+    },
+    "P 5": {
+      "name": "P 5",
+      "discordRole": "F 5"
+    },
+    "P 6": {
+      "name": "P 6",
+      "discordRole": "P 6"
     },
     "category": "Piltover Division",
     "divisionRole": "piltover liaison"
   },
   "noxian": {
-    "teams": {
-      "GoonSquad": {
-        "name": "GoonSquad",
-        "discordRole": "GoonSquad"
-      },
-      "The Dandelion Knights": {
-        "name": "The Dandelion Knights",
-        "discordRole": "The Dandelion Knights"
-      },
-      "Team Harmony Judan Division": {
-        "name": "Team Harmony Judan Division",
-        "discordRole": "Team Harmony Judan Division"
-      },
-      "Chicken Ryders": {
-        "name": "Chicken Ryders",
-        "discordRole": "Chicken Ryders"
-      },
-      "Imagine Ocean": {
-        "name": "Imagine Ocean",
-        "discordRole": "Imagine Ocean"
-      },
-      "Clown Collect": {
-        "name": "Clown Collect",
-        "discordRole": "Clown Collect"
-      },
-      "Guardian Gaming": {
-        "name": "Guardian Gaming",
-        "discordRole": "Guardian Gaming"
-      }
+    "N 1": {
+      "name": "N 1",
+      "discordRole": "N 1"
+    },
+    "N 2": {
+      "name": "N 2",
+      "discordRole": "N 2"
+    },
+    "N 3": {
+      "name": "N 3",
+      "discordRole": "N 3"
+    },
+    "N 4": {
+      "name": "N 4",
+      "discordRole": "N 4"
+    },
+    "N 5": {
+      "name": "N 5",
+      "discordRole": "N 5"
+    },
+    "N 6": {
+      "name": "N 6",
+      "discordRole": "N 6"
     },
     "category": "Noxian Division",
     "divisionRole": "noxian liaison"
   },
   "demacia": {
-    "teams": {
-      "Zenigma Shadowfire": {
-        "name": "Zenigma Shadowfire",
-        "discordRole": "Zenigma Shadowfire"
-      },
-      "Tactical Inting": {
-        "name": "Tactical Inting",
-        "discordRole": "Tactical Inting"
-      },
-      "KG Baron Not Included": {
-        "name": "KG Baron Not Included",
-        "discordRole": "KG Baron Not Included"
-      },
-      "Team Defiant": {
-        "name": "Team Defiant",
-        "discordRole": "Team Defiant"
-      },
-      "Stormriders": {
-        "name": "Stormriders",
-        "discordRole": "Stormriders"
-      }
+    "D 1": {
+      "name": "D 1",
+      "discordRole": "D 1"
+    },
+    "D 2": {
+      "name": "D 2",
+      "discordRole": "D 2"
+    },
+    "D 3": {
+      "name": "D 3",
+      "discordRole": "D 3"
+    },
+    "D 4": {
+      "name": "D 4",
+      "discordRole": "D 4"
+    },
+    "D 5": {
+      "name": "D 5",
+      "discordRole": "D 5"
+    },
+    "D 6": {
+      "name": "D 6",
+      "discordRole": "D 6"
     },
     "category": "Demacia Division",
     "divisionRole": "demacian liaison"
