@@ -30,7 +30,7 @@
     "divisionRole": "ionian liaison"
   },
   "shuriman": {
-    "team": {
+    "teams": {
       "S 1": {
         "name": "S 1",
         "discordRole": "S 1"
@@ -60,7 +60,7 @@
     "divisionRole": "shuriman liaison"
   },
   "freljord": {
-    "team": {
+    "teams": {
       "F 1": {
         "name": "F 1",
         "discordRole": "F 1"
@@ -90,85 +90,91 @@
     "divisionRole": "freljord liaison"
   },
   "piltover": {
-    "P 1": {
-      "name": "P 1",
-      "discordRole": "P 1"
-    },
-    "P 2": {
-      "name": "P 2",
-      "discordRole": "P 2"
-    },
-    "P 3": {
-      "name": "P 3",
-      "discordRole": "P 3"
-    },
-    "P 4": {
-      "name": "P 4",
-      "discordRole": "P 4"
-    },
-    "P 5": {
-      "name": "P 5",
-      "discordRole": "F 5"
-    },
-    "P 6": {
-      "name": "P 6",
-      "discordRole": "P 6"
+    "teams": {
+      "P 1": {
+        "name": "P 1",
+        "discordRole": "P 1"
+      },
+      "P 2": {
+        "name": "P 2",
+        "discordRole": "P 2"
+      },
+      "P 3": {
+        "name": "P 3",
+        "discordRole": "P 3"
+      },
+      "P 4": {
+        "name": "P 4",
+        "discordRole": "P 4"
+      },
+      "P 5": {
+        "name": "P 5",
+        "discordRole": "F 5"
+      },
+      "P 6": {
+        "name": "P 6",
+        "discordRole": "P 6"
+      }
     },
     "category": "Piltover Division",
     "divisionRole": "piltover liaison"
   },
   "noxian": {
-    "N 1": {
-      "name": "N 1",
-      "discordRole": "N 1"
-    },
-    "N 2": {
-      "name": "N 2",
-      "discordRole": "N 2"
-    },
-    "N 3": {
-      "name": "N 3",
-      "discordRole": "N 3"
-    },
-    "N 4": {
-      "name": "N 4",
-      "discordRole": "N 4"
-    },
-    "N 5": {
-      "name": "N 5",
-      "discordRole": "N 5"
-    },
-    "N 6": {
-      "name": "N 6",
-      "discordRole": "N 6"
+    "teams": {
+      "N 1": {
+        "name": "N 1",
+        "discordRole": "N 1"
+      },
+      "N 2": {
+        "name": "N 2",
+        "discordRole": "N 2"
+      },
+      "N 3": {
+        "name": "N 3",
+        "discordRole": "N 3"
+      },
+      "N 4": {
+        "name": "N 4",
+        "discordRole": "N 4"
+      },
+      "N 5": {
+        "name": "N 5",
+        "discordRole": "N 5"
+      },
+      "N 6": {
+        "name": "N 6",
+        "discordRole": "N 6"
+      }
     },
     "category": "Noxian Division",
     "divisionRole": "noxian liaison"
   },
   "demacia": {
-    "D 1": {
-      "name": "D 1",
-      "discordRole": "D 1"
-    },
-    "D 2": {
-      "name": "D 2",
-      "discordRole": "D 2"
-    },
-    "D 3": {
-      "name": "D 3",
-      "discordRole": "D 3"
-    },
-    "D 4": {
-      "name": "D 4",
-      "discordRole": "D 4"
-    },
-    "D 5": {
-      "name": "D 5",
-      "discordRole": "D 5"
-    },
-    "D 6": {
-      "name": "D 6",
-      "discordRole": "D 6"
+    "teams": {
+      "D 1": {
+        "name": "D 1",
+        "discordRole": "D 1"
+      },
+      "D 2": {
+        "name": "D 2",
+        "discordRole": "D 2"
+      },
+      "D 3": {
+        "name": "D 3",
+        "discordRole": "D 3"
+      },
+      "D 4": {
+        "name": "D 4",
+        "discordRole": "D 4"
+      },
+      "D 5": {
+        "name": "D 5",
+        "discordRole": "D 5"
+      },
+      "D 6": {
+        "name": "D 6",
+        "discordRole": "D 6"
+      }
     },
     "category": "Demacia Division",
     "divisionRole": "demacian liaison"
