@@ -17,9 +17,9 @@
         "name": "I 4",
         "discordRole": "I 4"
       },
-      "I 5": {
-        "name": "I 5",
-        "discordRole": "I 5"
+      "Poppin' Papis": {
+        "name": "Poppin' Papis",
+        "discordRole": "Poppin' Papis"
       },
       "I 6": {
         "name": "I 6",
@@ -31,9 +31,9 @@
   },
   "shuriman": {
     "teams": {
-      "S 1": {
-        "name": "S 1",
-        "discordRole": "S 1"
+      "Cloud 10": {
+        "name": "Cloud 10",
+        "discordRole": "Cloud 10"
       },
       "S 2": {
         "name": "S 2",
@@ -51,9 +51,9 @@
         "name": "S 5",
         "discordRole": "S 5"
       },
-      "S 6": {
-        "name": "S 6",
-        "discordRole": "S 6"
+      "Taco Taco's Taco Truck": {
+        "name": "Taco Taco's Taco Truck",
+        "discordRole": "Taco Taco's Taco Truck"
       }
     },
     "category": "Shuriman Division",
@@ -65,25 +65,25 @@
         "name": "F 1",
         "discordRole": "F 1"
       },
-      "F 2": {
-        "name": "F 2",
-        "discordRole": "F 2"
+      "Guardian Gaming": {
+        "name": "Guardian Gaming",
+        "discordRole": "Guardian Gaming"
       },
-      "F 3": {
-        "name": "F 3",
-        "discordRole": "F 3"
+      "The Dandelion Knights": {
+        "name": "The Dandelion Knights",
+        "discordRole": "The Dandelion Knights"
       },
       "F 4": {
         "name": "F 4",
         "discordRole": "F 4"
       },
-      "F 5": {
-        "name": "F 5",
-        "discordRole": "F 5"
+      "ERBS Pros": {
+        "name": "ERBS Pros",
+        "discordRole": "ERBS Pros"
       },
-      "F 6": {
-        "name": "F 6",
-        "discordRole": "F 6"
+      "Conduit": {
+        "name": "Conduit",
+        "discordRole": "Conduit"
       }
     },
     "category": "Freljord Division",
@@ -91,9 +91,9 @@
   },
   "piltover": {
     "teams": {
-      "P 1": {
-        "name": "P 1",
-        "discordRole": "P 1"
+      "RADDD": {
+        "name": "RADDD",
+        "discordRole": "RADDD"
       },
       "P 2": {
         "name": "P 2",
@@ -103,17 +103,17 @@
         "name": "P 3",
         "discordRole": "P 3"
       },
-      "P 4": {
-        "name": "P 4",
-        "discordRole": "P 4"
+      "Imagine Infernal": {
+        "name": "Imagine Infernal",
+        "discordRole": "Imagine Infernal"
       },
-      "P 5": {
-        "name": "P 5",
-        "discordRole": "F 5"
+      "Apes Together Strong": {
+        "name": "Apes Together Strong",
+        "discordRole": "Apes Together Strong"
       },
-      "P 6": {
-        "name": "P 6",
-        "discordRole": "P 6"
+      "Ionian Battle Meeps": {
+        "name": "Ionian Battle Meeps",
+        "discordRole": "Ionian Battle Meeps"
       }
     },
     "category": "Piltover Division",
@@ -151,21 +151,21 @@
   },
   "demacia": {
     "teams": {
-      "D 1": {
-        "name": "D 1",
-        "discordRole": "D 1"
+      "Stormriders": {
+        "name": "Stormriders",
+        "discordRole": "Stormriders"
       },
-      "D 2": {
-        "name": "D 2",
-        "discordRole": "D 2"
+      "Chicken Ryders": {
+        "name": "Chicken Ryders",
+        "discordRole": "Chicken Ryders"
       },
-      "D 3": {
-        "name": "D 3",
-        "discordRole": "D 3"
+      "Imagine Ocean": {
+        "name": "Imagine Ocean",
+        "discordRole": "Imagine Ocean"
       },
-      "D 4": {
-        "name": "D 4",
-        "discordRole": "D 4"
+      "After Dark": {
+        "name": "After Dark",
+        "discordRole": "After Dark"
       },
       "D 5": {
         "name": "D 5",
