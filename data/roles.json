@@ -1,13 +1,13 @@
 {
   "ionian": {
     "teams": {
-      "I 1": {
-        "name": "I 1",
-        "discordRole": "I 1"
+      "Players Reborn": {
+        "name": "Players Reborn",
+        "discordRole": "Players Reborn"
       },
-      "I 2": {
-        "name": "I 2",
-        "discordRole": "I 2"
+      "Imagine Cloud": {
+        "name": "Imagine Cloud",
+        "discordRole": "Imagine Cloud"
       },
       "Team Tanuki": {
         "name": "Team Tanuki",
@@ -21,9 +21,9 @@
         "name": "Poppin' Papis",
         "discordRole": "Poppin' Papis"
       },
-      "I 6": {
-        "name": "I 6",
-        "discordRole": "I 6"
+      "Predictive Gaming Nuwa": {
+        "name": "Predictive Gaming Nuwa",
+        "discordRole": "Predictive Gaming Nuwa"
       }
     },
     "category": "Ionian Division",
@@ -43,9 +43,9 @@
         "name": "Predictive Gaming Odin",
         "discordRole": "Predictive Gaming Odin"
       },
-      "S 4": {
-        "name": "S 4",
-        "discordRole": "S 4"
+      "The Silverbacks": {
+        "name": "The Silverbacks",
+        "discordRole": "The Silverbacks"
       },
       "Krow Gaming": {
         "name": "Krow Gaming",
@@ -99,9 +99,9 @@
         "name": "TM 26",
         "discordRole": "TM 26"
       },
-      "P 3": {
-        "name": "P 3",
-        "discordRole": "P 3"
+      "Team Harmony Dogwater": {
+        "name": "Team Harmony Dogwater",
+        "discordRole": "Team Harmony Dogwater"
       },
       "Imagine Infernal": {
         "name": "Imagine Infernal",
@@ -129,9 +129,9 @@
         "name": "Smashed Bros.",
         "discordRole": "Smashed Bros."
       },
-      "N 3": {
-        "name": "N 3",
-        "discordRole": "N 3"
+      "Zenigma Shadowfire": {
+        "name": "Zenigma Shadowfire",
+        "discordRole": "Zenigma Shadowfire"
       },
       "Puffcap Peddlers": {
         "name": "Puffcap Peddlers",
@@ -141,9 +141,9 @@
         "name": "Hawkthorne Esports",
         "discordRole": "Hawkthorne Esports"
       },
-      "N 6": {
-        "name": "N 6",
-        "discordRole": "N 6"
+      "GoonSquad": {
+        "name": "GoonSquad",
+        "discordRole": "GoonSquad"
       }
     },
     "category": "Noxian Division",
@@ -167,9 +167,9 @@
         "name": "After Dark",
         "discordRole": "After Dark"
       },
-      "D 5": {
-        "name": "D 5",
-        "discordRole": "D 5"
+      "G.E.T. A.C.E.D.": {
+        "name": "G.E.T. A.C.E.D.",
+        "discordRole": "G.E.T. A.C.E.D."
       },
       "Imagine Stars": {
         "name": "Imagine Stars",
